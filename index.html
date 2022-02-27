@@ -96,8 +96,10 @@
         
         <!-- Acá para respetar bem debería estar un section con la clase newmusic pero para usar grid lo vi viable hacer el index asi que me recomienda? -->
         <h2 class="artists__title">Our Artists</h2>
-        <a class="artists__seemore" href="./views/artists.html">see more</a>
-        <section class="artists__list">
+
+        <!-- <a class="artists__seemore" href="./views/artists.html">see more</a> -->
+        <button class="scroll-button" onclick="nextArtist()" id="bLess">></button>
+        <section class="artists__list" id="artists__list">
 
             <div class="artists__item">
                 <img class="artists__img" src="http://owsla.com/wp-content/uploads/2014/09/High-Res-Web-Use-1024x1024.jpg" alt="Artists 1">
@@ -183,6 +185,48 @@
                     </ul>
                 </div>
             </div>
+            <div class="artists__item">
+                <img class="artists__img" src="http://owsla.com/wp-content/uploads/2014/09/DONSLENS_MMACHINE_PRESSFINALS_WEB_1751-1024x682.jpg" alt="Artists 1">
+                <p class="artists__name">THE M MACHINE</p>
+                <div class="artists__info">
+                    <ul class="navbar__solcial-media navbar__solcial-media--column">
+                        <li class="navbar__icon navbar__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.youtube.com/c/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.instagram.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://twitter.com/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.facebook.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="artists__item">
+                <img class="artists__img" src="http://owsla.com/wp-content/uploads/2014/09/DONSLENS_MMACHINE_PRESSFINALS_WEB_1751-1024x682.jpg" alt="Artists 1">
+                <p class="artists__name">THE M MACHINE</p>
+                <div class="artists__info">
+                    <ul class="navbar__solcial-media navbar__solcial-media--column">
+                        <li class="navbar__icon navbar__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.youtube.com/c/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.instagram.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://twitter.com/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.facebook.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="artists__item">
+                <img class="artists__img" src="http://owsla.com/wp-content/uploads/2014/09/DONSLENS_MMACHINE_PRESSFINALS_WEB_1751-1024x682.jpg" alt="Artists 1">
+                <p class="artists__name">THE M MACHINE</p>
+                <div class="artists__info">
+                    <ul class="navbar__solcial-media navbar__solcial-media--column">
+                        <li class="navbar__icon navbar__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.youtube.com/c/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.instagram.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://twitter.com/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a></li>
+                        <li class="navbar__icon navbar__icon--color"><a href="https://www.facebook.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
 
         </section>
         
@@ -190,14 +234,15 @@
             <h2 class="playlists__title">Our Playlists</h2>
 
             <div class="playlists__list">
-                <a class="playlists__link" href="#1">
+                <a class="playlists__link" href="https://open.spotify.com/playlist/6pqF6xEMaLBXHdUPKlXZwd?si=425ca7b7a2bc4e30">
                     <img class="playlists__img" src="https://i.scdn.co/image/ab67706c0000bebbeec08ebad6313ba4620d1231" alt="Playlists 1">
+                    
                 </a>
-                <a class="playlists__link" href="#2">
-                    <img class="playlists__img" src="https://i.scdn.co/image/ab67706c0000bebbb528347c16962d66ac3be2d5" alt="Playlists 3">
-                </a>
-                <a class="playlists__link" href="#3">
+                <a class="playlists__link" href="https://open.spotify.com/playlist/53PL6ta1G0KUC1wHiX7ABx?si=67ef4e8d64aa42a2">
                     <img class="playlists__img" src="https://i.scdn.co/image/ab67706c0000bebb59f906f5d309fc1c9b35c95b" alt="Playlists 2">
+                </a>
+                <a class="playlists__link" href="https://open.spotify.com/playlist/3GGnJRZnzkiie2izVuUxN0?si=791a2f9f799342b6">
+                    <img class="playlists__img" src="https://i.scdn.co/image/ab67706c0000bebbb528347c16962d66ac3be2d5" alt="Playlists 3">
                 </a>
             </div>
 
@@ -206,14 +251,14 @@
         <section class="radio">
             <h2 class="radio_title">Our Radio</h2>
             <div class="radio__list" href="">
-                <a class="radio__link" href="#2">
+                <a class="radio__link" href="https://www.mixcloud.com/PAUL_DI/owsla-radio-8-beats-1/">
                     <img class="radio__img" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/f/0/e/2/9b5b-800d-4681-af28-fc99a7f790ca" alt="Radio 1">
                 </a>
-                <a class="radio__link" href="#2">
-                    <img class="radio__img" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/1/b/d/a/f3ef-d52d-4c66-b6d0-568ea94e3d9a" alt="Radio 2">
+                <a class="radio__link" href="https://www.mixcloud.com/PAUL_DI/owsla-radio-17-beats-1/">
+                    <img class="radio__img" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/f/4/f/8/0e00-9c3b-4bc3-afa8-d1a4f25943ec" alt="Radio 3">
                 </a>
-                <a class="radio__link" href="#2">
-                <img class="radio__img" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/f/4/f/8/0e00-9c3b-4bc3-afa8-d1a4f25943ec" alt="Radio 3">
+                <a class="radio__link" href="https://www.mixcloud.com/PAUL_DI/owsla-radio-12-beats-1/">
+                    <img class="radio__img" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/1/b/d/a/f3ef-d52d-4c66-b6d0-568ea94e3d9a" alt="Radio 2">
                 </a>
             </div>
         </section>
@@ -273,6 +318,17 @@
     </footer>
 
     <script type="text/javascript">
+
+        /* Artists Slider */
+
+        function nextArtist(){
+            let element =  document.getElementById("artists__list");
+            console.log(element.scrollLeft); //Muestra en consola la posicion del scroll
+            element.scroll({left: element.scrollLeft + 900, behavior: "smooth"});/*Obtiene la posicion del scroll de la seccion y le suma el ancho de la tarjeta para ir a la siguiente*/
+            if(element.scrollLeft>1200){
+                element.scroll({left: 0, behavior: "smooth"});
+            }
+        }
 
         /* Auto and Manual Slider */
 

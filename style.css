@@ -279,7 +279,6 @@ textarea:focus:-ms-input-placeholder{color: transparent;}
     width: 100%;
     padding: 1rem;
     z-index: 2;
-    background-color: var(--cWhite);
 }
 
 .header__logo img {
@@ -320,7 +319,6 @@ textarea:focus:-ms-input-placeholder{color: transparent;}
 .burger{
     position: relative;
     width: 22px;
-   
 }
 .burger::before{
     top: -10px;
@@ -511,7 +509,7 @@ main {
 }
 
 section {
-    margin-bottom: 6.25rem;
+    margin-bottom: 8rem;
 }
 
 /* -------------------- Home -------------------- */
@@ -654,8 +652,42 @@ input[type="radio"] {
     margin-bottom: 0.5rem;
 }
 
+.newmusic_link{
+    position: relative;
+    transition: all ease-in-out .5s;
+}
+
+.newmusic_link:hover .newmusic__img {
+    filter: brightness(0.3);
+    transition: all ease-in-out .5s;
+}
+
+.newmusic_link:hover::after{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.newmusic_link::after{
+    opacity: 0;
+    content: "Listen Here";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.9);
+    padding: 1rem;
+    background: var(--cWhite);
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: var(--cBlack);
+    transition: all ease-in-out .5s;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+
+}
+
 .newmusic__img {
     width: 100%;
+    position: relative;
 }
 
 
@@ -670,7 +702,7 @@ input[type="radio"] {
 
 .artists__seemore {
     grid-column: 1 / 7;
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
     justify-self: end;
     align-self: center;
 
@@ -685,6 +717,7 @@ input[type="radio"] {
 
 .artists__list {
     grid-column: span 6;
+    position: relative;
     margin-left: 1rem;
     display: flex;
     flex-direction: row;
@@ -692,16 +725,34 @@ input[type="radio"] {
     overflow: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    margin-bottom: 6.25rem;
+    margin-bottom: 8rem;
+}
+
+.scroll-button {
+    grid-column: 1 / 7;
+    grid-row: 4/5;
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+    z-index: 1;
+    background: var(--cwhite);
+    padding: 0.6rem;
+    font-size: 1.6rem;
+    line-height: 1rem;
+    border: solid 2px black;
+    color: black;
+    margin-bottom: 1rem;
 }
 
 .artists__item {
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
     position: relative;
     scroll-snap-align: start;
+}
+
+.artists__item:not(:last-child) {
+    margin-right: 2rem;
 }
 
 .artists__img {
@@ -782,7 +833,7 @@ input[type="radio"] {
     animation: card2-in .4s cubic-bezier(0.8, 0.2, 0.1, 0.8);
 }
 
-.playlists__link:nth-child(3), .radio__link:nth-child(3) {
+.playlists__link:nth-child(3), .radio__link:nth-child(3){
     z-index: 1;
     margin-top: 110px;
 }
@@ -793,13 +844,46 @@ input[type="radio"] {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
+.playlists__link:hover .playlists__img,
+.radio__link:hover .radio__img{
+    filter: brightness(0.5);
+    transition: all ease-in-out .5s;
+}
+
+.playlists__link::after, .radio__link::after{
+    opacity: 0;
+    content: "Listen Here";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background: var(--cWhite);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: var(--cBlack);
+    transition: all ease-in-out .5s;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+}
+
+.playlists__link:nth-child(3)::after, .radio__link:nth-child(3)::after {
+    margin-top: 55px;
+}
+
+
+.playlists__link:hover::after, .radio__link:hover::after{
+    opacity: 1;
+}
+
+
 @keyframes card1-in {
     0% {
         z-index: 0;
     }
     50% {
         
-        transform: translateX(20%) rotate(2deg) translatey(-10px);
+        transform: translateX(20%);
     }    
 }
 
@@ -809,7 +893,7 @@ input[type="radio"] {
     }
     50% {
         
-        transform: translateX(-20%) rotate(-2deg) translatey(-10px);
+        transform: translateX(-20%);
     }
 }
 
@@ -1327,7 +1411,7 @@ input[type="radio"] {
     .newmusic__album:nth-child(5),
     .newmusic__album:nth-child(3){
 
-        margin: 0 0 6.25rem 0;
+        margin: 0 0 8rem 0;
     }
 
     .newmusic__album:nth-child(3){
@@ -1352,7 +1436,11 @@ input[type="radio"] {
         transform:scale(-1);
         white-space: nowrap;
         margin-left: -.8rem;
-        margin-bottom: 6.25rem;
+        margin-bottom: 8rem;
+    }
+    
+    .artists__item {
+        scroll-snap-align: end;
     }
 
     .artists__seemore {
@@ -1403,10 +1491,6 @@ input[type="radio"] {
     }
     [class^="icon-"], [class*=" icon-"] {
         font-size: var(--iconsize);
-    }
-
-    ::-webkit-scrollbar {
-        height: 8px;
     }
 
     .line{
@@ -1525,7 +1609,8 @@ input[type="radio"] {
     /* ---------- Playlists / Radio ---------- */
 
     .playlists__img, .radio__img {
-        max-width: 300px;
+        max-width: 350px;
+        width: 350px;
     }
 
     /* ---------- Footer ---------- */
@@ -1558,3 +1643,4 @@ input[type="radio"] {
     
 
 }
+
