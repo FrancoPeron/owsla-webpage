@@ -751,10 +751,6 @@ input[type="radio"] {
     scroll-snap-align: start;
 }
 
-.artists__item:not(:last-child) {
-    margin-right: 2rem;
-}
-
 .artists__img {
     width: 300px;
     height: 400px;
@@ -789,6 +785,11 @@ input[type="radio"] {
     margin: 0;
     overflow: hidden; /*me ayuda con un overflow en modo telfono que sucede en la vista artists*/
 }
+
+.artists__item:not(:last-child) {
+    margin-right: 2rem;
+}
+
 
 .artists__img--size{
     width: 100%;
