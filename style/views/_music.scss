@@ -1,0 +1,60 @@
+@import "../variables";
+
+/* ------------------------------ Music ------------------------------ */
+
+.music{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, $min);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1400px;
+    
+}
+
+.music__release {
+    position: relative;
+}
+
+.music__img {
+    width: 100%;
+}
+
+.music__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: all ease-in-out.5s;
+}
+
+
+.music__album-title {
+    color: $cWhite;
+    margin-bottom: .5rem;
+}
+
+.music__artist {
+    color: $cWhite;
+}
+
+.music__release:hover .music__name {
+    opacity: 1;
+    transition: all ease-in-out.5s;
+}
+
+.modal-content{
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-body {
+    padding: 0;
+    height: 500px;
+}

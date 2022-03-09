@@ -1,0 +1,41 @@
+/* ---------- Fonts ---------- */
+
+@font-face {
+    font-family: 'Alien-League-2';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/alienleagueiibold.ttf') format('truetype')
+}
+
+.f-text{
+    font-family: "Neue Helvetica W01", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.newmusic__title,
+.artists__title,
+.playlists__title,
+.radio_title,
+.suscribe__title {
+    font-size: 2.625rem;
+    line-height: calc(140%);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.newmusic__album-title,
+.artists__name,
+.merch__item-name {
+    font-size: 1.75rem;
+    letter-spacing: 0.048rem;
+    line-height: calc(150%);
+    -webkit-text-stroke: .2px rgb(0, 0, 0);
+}
+
+.newmusic__artist,
+.merch__item-price {
+    font-size: 1.5rem;
+    letter-spacing: 0.032rem;
+    line-height: calc(110%);
+    -webkit-text-stroke: .2px rgb(0, 0, 0);
+}

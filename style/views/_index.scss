@@ -1,0 +1,250 @@
+@import "../variables";
+
+
+/* 
+
+.background2{
+    grid-area: artists;
+    margin-top: 100px;
+    max-height: 300px;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(#ffffff 3px, transparent 3px), linear-gradient(to right, #ffffff 3px, #000000 0px);
+    background-size: 30px 30px;
+
+}
+ */
+
+/* ---------- Line ---------- */
+
+.line {
+    grid-area: line;
+    min-height: 10px;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    background: linear-gradient(to right,
+            $color1 14.286%,
+            $color2 14.286% 28.57%,
+            $color3 28.57% 42.85%,
+            $color4 42.85% 57.142%,
+            $color5 57.142% 71.428%,
+            $color6 71.428% 85.714%,
+            $color7 85.714% 100%);
+}
+
+.line2 {
+    grid-area: line;
+    min-height: 10px;
+    width: 100%;
+    z-index: 3;
+}
+
+.line-grey {
+    grid-area: line;
+    min-height: 24px;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    background: linear-gradient(to right,
+            #f3f3f3 14.286%,
+            #d5d5d5 14.286% 28.57%,
+            #aeaeae 28.57% 42.85%,
+            #797979 42.85% 57.142%,
+            #616161 57.142% 71.428%,
+            #373737 71.428% 85.714%,
+            #1c1c1c 85.714% 100%);
+}
+
+
+
+/* -------------------- Home -------------------- */
+
+.main-index{
+    display: grid;
+    grid-template-areas:
+        'slider slider'
+        'newmusic newmusic'
+        'artists artists'
+        'radio playlists'
+        'suscribe suscribe'
+    ;
+
+}
+
+
+/* ---------- Playlists / Radio ---------- */
+
+.radio {
+    grid-area: radio;
+    width: 100%;
+    max-width: calc(700px);
+    padding-left: 1rem;
+    justify-self: end;
+}
+
+.playlists{
+    grid-area: playlists;
+    width: 100%;
+    max-width: calc(700px);
+    padding-right: 1rem;
+    justify-self: start;
+}
+
+.playlists__list, .radio__list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.playlists__link:nth-child(1), .radio__link:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    right: 5%;
+}
+
+.playlists__link:nth-child(2), .radio__link:nth-child(2) {
+    position: absolute;
+    top: 55px;
+    left: 5%;
+}
+
+.playlists__link:nth-child(1):hover, .radio__link:nth-child(1):hover{
+    z-index: 2;
+    animation: card1-in .4s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+    
+}
+
+.playlists__link:nth-child(2):hover, .radio__link:nth-child(2):hover{
+    z-index: 2;
+    animation: card2-in .4s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+}
+
+.playlists__link:nth-child(3), .radio__link:nth-child(3){
+    z-index: 1;
+    margin-top: 110px;
+}
+
+.playlists__img, .radio__img {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.playlists__link:hover .playlists__img,
+.radio__link:hover .radio__img{
+    filter: brightness(0.5);
+    transition: all ease-in-out .5s;
+}
+
+.playlists__link::after, .radio__link::after{
+    opacity: 0;
+    content: "Listen Here";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background: $cWhite;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: var(--cBlack);
+    transition: all ease-in-out .5s;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+}
+
+.playlists__link:nth-child(3)::after, .radio__link:nth-child(3)::after {
+    margin-top: 55px;
+}
+
+
+.playlists__link:hover::after, .radio__link:hover::after{
+    opacity: 1;
+}
+
+
+@keyframes card1-in {
+    0% {
+        z-index: 0;
+    }
+    50% {
+        
+        transform: translateX(20%);
+    }    
+}
+
+@keyframes card2-in {
+    0% {
+        z-index: 0;
+    }
+    50% {
+        
+        transform: translateX(-20%);
+    }
+}
+
+
+/* ---------- Suscribe ---------- */
+
+.suscribe {
+    grid-area: suscribe;
+    max-width: calc(1400px + 2rem);
+    padding: 1rem;
+    justify-self: center;
+    padding: 0 1rem;
+}
+
+.suscribe__form {
+    max-width: 550px;
+    border: solid #000 2px;
+    margin: 0 1rem;
+}
+
+.suscribe__email {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 0.6rem;
+}
+
+.suscribe__btn {
+    font-family: Alien-League-2;
+    font-size: 1.625rem;
+    white-space: nowrap;
+    padding: 0 1.5rem;
+    height: 46px;
+    letter-spacing: 0.078rem;
+    background: var(--cBlack);
+    color: $cWhite;
+    border-left: solid 2px var(--cBlack);
+    cursor: pointer;
+}
+
+.suscribe__btn:hover {
+    
+    background: var(--color3);
+    color: var(--cBlack);
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) { 
+
+    .main-index{
+        margin-top: 1rem;
+    
+    }
+    
+   
+    
+
+}

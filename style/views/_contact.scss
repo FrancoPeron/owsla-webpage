@@ -1,0 +1,111 @@
+@import "../variables";
+
+/* ------------------------------ Contact ------------------------------ */
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    
+}
+
+.contact__suscribe, .contact__demo, .contact__description {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dashed;
+    padding: 1rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: whitesmoke;
+}
+
+
+.contact__suscribe-btn, .contact__demo-btn, .contact__description-btn {
+    font-family: Alien-League-2;
+    font-size: 1.625rem;
+    white-space: nowrap;
+    padding: 0 1.5rem;
+    height: 46px;
+    letter-spacing: 0.078rem;
+    background: var(--cBlack);
+    color: $cWhite;
+    cursor: pointer;
+}
+
+.contact__suscribe-box, .contact__demo-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: $cWhite;
+    border: solid #000 2px;
+}
+
+.contact__suscribe-email, .contact__description-textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    display: block;
+    width: 100%;
+    background: var(--cWhite);
+    padding: 0 0.6rem;
+}
+
+
+.contact__description-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--cWhite);
+    border: solid #000 2px;
+}
+
+.contact__description-textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+
+
+.contact__demo-file {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    width: 100%;
+    background: $cWhite;
+    align-self: center;
+    position: relative;
+}
+
+.contact__demo-file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.contact__demo-file::before {
+    content: 'Select files';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: -9px;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: black;
+    display: inline-block;
+    padding: 0.6rem;
+    cursor: pointer;
+
+}
+
+.contact__demo-file:hover::before {
+    color: var(--color7);
+}
+
+.contact__demo-file:active::before {
+    background: transparent
+}

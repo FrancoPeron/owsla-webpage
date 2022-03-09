@@ -1,0 +1,13 @@
+@import "../variables";
+
+
+
+/* ------------------------------ Artists ------------------------------ */
+.artists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, $min);
+    gap: 1rem;
+    width: 100%;
+    
+}
+
