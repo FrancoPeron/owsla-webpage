@@ -1,30 +1,98 @@
 /* ---------- Fonts ---------- */
 
-@font-face {
+/* @font-face {
     font-family: 'Alien-League-2';
     font-style: normal;
     font-weight: 700;
     src: url('./assets/fonts/alienleagueiibold.ttf') format('truetype')
 }
+ */
 
-.f-text{
-    font-family: "Neue Helvetica W01", Helvetica, Roboto, Arial, sans-serif;
+@font-face {
+    font-family: 'MonumentExtended';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/fonts/MonumentExtended-Light.otf') format('opentype')
 }
 
-.newmusic__title,
-.artists__title,
-.playlists__title,
-.radio_title,
-.suscribe__title {
-    font-size: 2.625rem;
-    line-height: calc(140%);
-    font-weight: 600;
-    margin-bottom: 1.25rem;
+@font-face {
+    font-family: 'MonumentExtended';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/MonumentExtended-Regular.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'MonumentExtended';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/MonumentExtended-Black.otf') format('opentype')
+}
+
+.f-text{
+    font-family: 'Montserrat', sans-serif;
+    //font-family: "Neue Helvetica W01", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.f-monument{
+    font-family: "MonumentExtended", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.f-title {
+    @extend .f-monument;
+    font-size: clamp(2.2rem, 5vw, 2.5rem);
+    line-height: calc(120%);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: $cBlack;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
+.f-title2 {
+    @extend .f-monument;
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    line-height: calc(120%);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: $cBlack;
+    text-align: center;
+}
+
+.f-subtitle {
+    @extend .f-text;
+    font-size: clamp(.8rem, 4vw, 1.5rem);
+    line-height: calc(150%);
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #1c1c1c;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.f-subtitle2 {
+    @extend .f-text;
+    font-size: clamp(.8rem, 4vw, 1.2rem);
+    line-height: calc(120%);
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #1c1c1c;
+    text-align: center;
+}
+
+.f-headline {
+    @extend .f-monument;
+    font-size: clamp(.8rem, 4vw, 1.2rem);
+    line-height: calc(150%);
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #1c1c1c;
+    margin-bottom: 1rem;
+}
+
+
 .newmusic__album-title,
-.artists__name,
+.artist__name,
 .merch__item-name {
     font-size: 1.75rem;
     letter-spacing: 0.048rem;

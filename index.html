@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Owsla">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon-owsla.ico" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>OWSLA</title>
 </head>
 
 <body class="index">
     
     <span class="line"></span>
+    <span class="line-grey"></span>
 
     <header class="header">
         <input type="checkbox" name="burger-btn" id="burger">
@@ -46,12 +51,12 @@
                 </li>
             </ul>
             <ul class="nav__solcial-media nav__solcial-media--hidden">
-                <li class="nav__icon"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
-                <li class="nav__icon"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
-                <li class="nav__icon"><a href="https://www.youtube.com/c/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i></a></li>
-                <li class="nav__icon"><a href="https://www.instagram.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a></li>
-                <li class="nav__icon"><a href="https://twitter.com/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a></li>
-                <li class="nav__icon"><a href="https://www.facebook.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://www.youtube.com/c/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://www.instagram.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://twitter.com/owsla" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a></li>
+                <li class="nav__icon nav__icon--color"><a href="https://www.facebook.com/owsla/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a></li>
             </ul>
         </nav>
 
@@ -59,54 +64,79 @@
 
     <main class="main-index">
 
-        <section class="slider">
-            <div class="slider__videos d-flex flex-row flex-nowrap position-relative">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <video id="video1" class="slider__video" src="./assets/video/FriendlyFire.mp4#t" muted loop autoplay></video>
-                <video id="video2" class="slider__video" src="./assets/video/BirdyNamNam-Goinin.mp4" muted loop autoplay></video>
-                <video id="video3" class="slider__video" src="./assets/video/Phonat-RideThePrejudice.mp4#t=30" muted loop autoplay></video>
-                <!-- <img class="slider__img" src="./assets/image/slider3.jpg" alt=""> -->
-            </div>
-            
-            <div class="slider__nav d-flex flex-row justify-content-center w-100">
-                <label id="label-radio1" for="radio1" class="slider__link"></label>
-                <label id="label-radio2" for="radio2" class="slider__link"></label>
-                <label id="label-radio3" for="radio3" class="slider__link"></label>
+        <section class="banner">
+        <!--  <hr class="slider__line"> -->
+            <div class="slider">
+                <div class="slider__videos">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div id="video1" class="slider__box-video">
+                        <video class="slider__video" src="./assets/video/WarmWinters.webm" muted loop autoplay></video>
+                        <div class="slider__box-info">
+                            <h2 class="slider__title"><p class="slider__subtitle">Collection Clothing</p>Warm Winters<br><p class="slider__title--outline">OWSLA GOODS</p></h2>
+                            <a class="slider__btn" href="https://www.youtube.com/watch?v=k4XX7TTeTvI" target="_blank">Watch Now</a>
+                        </div>
+                    </div>
+                    <div id="video2" class="slider__box-video">
+                        <video class="slider__video" src="./assets/video/BirdyNamNam-Goinin.mp4#t=15" muted loop autoplay></video>
+                        <div class="slider__box-info">
+                            <h2 class="slider__title"><p class="slider__subtitle">Music Video</p>Goin'in<br><p class="slider__title--outline">Birdy Nam Nam</p></h2>
+                            <a class="slider__btn" href="https://www.youtube.com/watch?v=3JJsq0GbpPg" target="_blank">Watch Now</a>
+                        </div>
+                    </div>
+                    <div id="video3" class="slider__box-video">
+                        <video class="slider__video" src="./assets/video/FriendlyFire.mp4#t=0" muted loop autoplay></video>
+                        <div class="slider__box-info">
+                            <h2 class="slider__title"><p class="slider__subtitle">Music Video</p>Frendly Fire<br><p class="slider__title--outline">Skrillex</p></h2>
+                            <a class="slider__btn" href="https://www.youtube.com/watch?v=F6CNaD21gC0" target="_blank">Watch Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- <img class="slider__img" src="./assets/image/slider3.jpg" alt=""> -->
+                </div>
+                
+                <div class="slider__nav d-flex flex-row justify-content-center w-100">
+                    <label class="slider__link" id="label-radio1" for="radio1" ></label>
+                    <label class="slider__link" id="label-radio2" for="radio2" ></label>
+                    <label class="slider__link" id="label-radio3" for="radio3" ></label>
+                </div>
             </div>
         </section>
 
-        <section class="newmusic">
-            <h2 class="newmusic__title">Latest Releases</h2>
-            <section class="newmusic__album d-flex flex-column">
-                <a class="newmusic_link" href="https://open.spotify.com/album/1Pg5Ot24fhSbQbxqV5OTZS?si=UhXpuR6ESGG9pI3eGSRoGA"><img class="newmusic__img" src="http://owsla.com/wp-content/uploads/2019/05/D7wbzTOUwAEdwha-1024x1024.jpg" alt="Release 1"></a>
-                <p class="newmusic__album-title">TURN OFF THE LIGHTS EP</p>
-                <p class="newmusic__artist">DOG BLOOD</p>
-            </section>
-            <section class="newmusic__album d-flex flex-column">
-                <a class="newmusic_link" href="https://open.spotify.com/album/1smTOWw543bigqIoxlC8X6?si=3noUfExbQUqoo_D0UadiCg"><img class="newmusic__img" src="http://owsla.com/wp-content/uploads/2019/12/Midnight_Hour_Remixes_FINAL_5-1024x1024.jpg" alt="Release 2"></a>
-                <p class="newmusic__album-title">Midnight Hour Remixes</p>
-                <p class="newmusic__artist">SKRILLEX, BOYS NOIZE & TY DOLLA $IGN</p>
-            </section>
-            <section class="newmusic__album d-flex flex-column">
-                <a class="newmusic_link" href="https://open.spotify.com/album/4rKOfbv5azHLugcKVViKgN?si=9zILWWh7S7Oy7Hynku8vTQ"><img class="newmusic__img" src="http://owsla.com/wp-content/uploads/2019/11/SalvatoreGanacci-Horse-Remixes-1024x1024.jpg" alt="Release 3"></a>
-                <p class="newmusic__album-title">HORSE REMIXES</p>
-                <p class="newmusic__artist">SALVATORE GANACCI</p>
-            </section>
-        </section>
-
-        <section class="artists">
-            <div class=" artists__box d-flex flex-row justify-content-between">
-                <h2 class="artists__title">Our Artists</h2>
-                <button class="scroll-button" onclick="nextArtist()" id="bLess">></button>
+        <section class="new-music">
+            <h2 class="new-music__title">Latest Releases</h2>
+            <h3 class="new-music__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</h3>
+            <div class="new-music__album d-flex flex-column shadow">
+                <a class="new-music_link" href="https://open.spotify.com/album/1Pg5Ot24fhSbQbxqV5OTZS?si=UhXpuR6ESGG9pI3eGSRoGA"><img class="new-music__img" src="./assets/image/releases/www.jpg" alt="Release 1"></a>
+                <!-- <p class="new-music__album-title">TURN OFF THE LIGHTS EP</p> -->
+                <!-- <p class="new-music__artist">DOG BLOOD</p> -->
             </div>
-            <div class="artists__list d-flex flex-row align-items-center position-relative" id="artists__list">
+            <div class="new-music__album d-flex flex-column shadow">
+                <a class="new-music_link" href="https://open.spotify.com/album/1smTOWw543bigqIoxlC8X6?si=3noUfExbQUqoo_D0UadiCg"><img class="new-music__img" src="http://owsla.com/wp-content/uploads/2019/09/Midnight-Hour-Final.jpg" alt="Release 2"></a>
+                <!-- <p class="new-music__album-title">Midnight Hour Remixes</p> -->
+                <!-- <p class="new-music__artist">SKRILLEX, BOYS NOIZE & TY DOLLA $IGN</p> -->
+            </div>
+            <div class="new-music__album d-flex flex-column shadow">
+                <a class="new-music_link" href="https://open.spotify.com/album/4rKOfbv5azHLugcKVViKgN?si=9zILWWh7S7Oy7Hynku8vTQ"><img class="new-music__img" src="http://owsla.com/wp-content/uploads/2018/12/web-resize-1.jpg" alt="Release 3"></a>
+                <!-- <p class="new-music__album-title">HORSE REMIXES</p> -->
+                <!-- <p class="new-music__artist">SALVATORE GANACCI</p> -->
+            </div>
+        </section>
+        <span class="new-music-background"></span>
 
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#artistSkrillex" src="http://owsla.com/wp-content/uploads/2014/09/High-Res-Web-Use-1024x1024.jpg" alt="Artists 1">
-                    <p class="artists__name">SKRILLEX</p>
-                    <div class="artists__info">
+        <section class="our-artists">
+            <div class="our-artists__box d-flex flex-row justify-content-between">
+                <h2 class="our-artists__title">Our Artists</h2>
+                <hr class="line3">
+                <button class="our-artists__scroll-button" onclick="nextArtist()" id="bLess">></button>
+            </div>
+            <div class="our-artists__list d-flex flex-row align-items-center position-relative" id="artists__list">
+
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#artistSkrillex" src="http://owsla.com/wp-content/uploads/2014/09/High-Res-Web-Use-1024x1024.jpg" alt="Artists 1">
+                    <p class="artist__name">SKRILLEX</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/artist/5he5w2lnU9x7JFhnwcekXX?si=hUt7FaVoRJu9Yc6u19oaug" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -131,10 +161,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#whatSoNot" src="http://owsla.com/wp-content/uploads/2014/09/WSN_5279-1024x683.jpg" alt="Artists 1">
-                    <p class="artists__name">WHAT SO NOT</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#whatSoNot" src="http://owsla.com/wp-content/uploads/2014/09/WSN_5279-1024x683.jpg" alt="Artists 1">
+                    <p class="artist__name">WHAT SO NOT</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -159,10 +189,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#vindata" src="http://owsla.com/wp-content/uploads/2015/07/IMG_5466-1024x683.jpg" alt="Artists 1">
-                    <p class="artists__name">VINDATA</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#vindata" src="http://owsla.com/wp-content/uploads/2015/07/IMG_5466-1024x683.jpg" alt="Artists 1">
+                    <p class="artist__name">VINDATA</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -187,10 +217,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#valentinoKhan" src="http://owsla.com/wp-content/uploads/2014/09/VKStandingInFrontOfHelicopterGoldBriefcase.jpg" alt="Artists 1">
-                    <p class="artists__name">VALENTINO KHAN</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#valentinoKhan" src="http://owsla.com/wp-content/uploads/2014/09/VKStandingInFrontOfHelicopterGoldBriefcase.jpg" alt="Artists 1">
+                    <p class="artist__name">VALENTINO KHAN</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -215,10 +245,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#yogi" src="http://owsla.com/wp-content/uploads/2014/09/yogipress.png" alt="Artists 1">
-                    <p class="artists__name">YOGI</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#yogi" src="http://owsla.com/wp-content/uploads/2014/09/yogipress.png" alt="Artists 1">
+                    <p class="artist__name">YOGI</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -243,10 +273,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#theMMachine" src="http://owsla.com/wp-content/uploads/2014/09/DONSLENS_MMACHINE_PRESSFINALS_WEB_1751-1024x682.jpg" alt="Artists 1">
-                    <p class="artists__name">THE M MACHINE</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#theMMachine" src="http://owsla.com/wp-content/uploads/2014/09/DONSLENS_MMACHINE_PRESSFINALS_WEB_1751-1024x682.jpg" alt="Artists 1">
+                    <p class="artist__name">THE M MACHINE</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -271,10 +301,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#koanSound" src="http://owsla.com/wp-content/uploads/2014/09/koansound2014promo.png" alt="Artists 1">
-                    <p class="artists__name">KOAN SOUND</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#koanSound" src="http://owsla.com/wp-content/uploads/2014/09/koansound2014promo.png" alt="Artists 1">
+                    <p class="artist__name">KOAN SOUND</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -299,10 +329,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artists__item d-flex flex-column position-relative w-100">
-                    <img class="artists__img" data-bs-toggle="modal" data-bs-target="#zedd" src="http://owsla.com/wp-content/uploads/2014/10/zedd_press_1_555px.jpg" alt="Artists 1">
-                    <p class="artists__name">ZEDD</p>
-                    <div class="artists__info">
+                <div class="artist d-flex flex-column position-relative w-100">
+                    <img class="artist__img" data-bs-toggle="modal" data-bs-target="#zedd" src="http://owsla.com/wp-content/uploads/2014/10/zedd_press_1_555px.jpg" alt="Artists 1">
+                    <p class="artist__name">ZEDD</p>
+                    <div class="artist__info">
                         <ul class="nav__solcial-media nav__solcial-media--column">
                             <li class="nav__icon nav__icon--color"><a href="https://soundcloud.com/owslaofficial" target="_blank" rel="noopener noreferrer"><i class="icon-soundcloud"></i></a></li>
                             <li class="nav__icon nav__icon--color"><a href="https://open.spotify.com/user/owslaofficial?si=af08e69b87934cd4" target="_blank" rel="noopener noreferrer"><i class="icon-spotify"></i></a></li>
@@ -330,12 +360,13 @@
                         </div>
                     </div>
                 </div>
-
+                
             </div>
-        
+            
         </section>
 
-        <section class="playlists d-flex flex-column align-items-center">
+
+        <section class="playlists align-items-center">
             <h2 class="playlists__title">Our Playlists</h2>
             <div class="playlists__list">
                 <a class="playlists__link" href="https://open.spotify.com/playlist/6pqF6xEMaLBXHdUPKlXZwd?si=425ca7b7a2bc4e30">
@@ -366,16 +397,17 @@
             </div>
         </section>
         
-        <section class="suscribe d-flex flex-column align-items-center">
-            <h2 class="suscribe__title">Don't Miss The Next Release, Sign Up For Our Email</h2>
-            <form class="suscribe__form d-flex flex-row w-100">
-                <input class="suscribe__email" type="email" name="subscribe" id="">
-                <button class="suscribe__btn" id="liveToastBtn" onclick="toastbtn()">Sign Up</button>
+        <section class="suscribe">
+            <h2 class="suscribe__title">Don't Miss The Next News</h2>
+            <h3 class="suscribe__subtitle">Sign up to receive an email with all new releases, show dates and more</h3>
+            <form class="suscribe__form">
+                <input class="suscribe__email" placeholder="Email Address" type="email" name="subscribe" id="">
+                <button class="suscribe__btn">Sign Up</button>
             </form>
         </section>
+        <span class="suscribe-background"></span>
 
 
-        <span class="background2"></span>
 
     </main> 
 
@@ -448,6 +480,7 @@
         var cont = 2;
         var anterior = 0
         let links = document.getElementsByClassName("slider__link");
+        document.getElementById("radio1").checked = true;
 
         links[0].classList.add("active");
 

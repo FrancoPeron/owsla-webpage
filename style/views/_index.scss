@@ -1,61 +1,11 @@
 @import "../variables";
 
-
-/* 
-
-.background2{
-    grid-area: artists;
-    margin-top: 100px;
-    max-height: 300px;
-    background-color: #000000;
-    opacity: 1;
-    background-image:  linear-gradient(#ffffff 3px, transparent 3px), linear-gradient(to right, #ffffff 3px, #000000 0px);
-    background-size: 30px 30px;
-
+.index{
+    background-image: url(./assets/image/background1.png), url(./assets/image/background1.png);
+    background-repeat: repeat-x, repeat-x;
+    background-position: 0 top, 0 250px;
+    background-size: 256px;
 }
- */
-
-/* ---------- Line ---------- */
-
-.line {
-    grid-area: line;
-    min-height: 10px;
-    width: 100%;
-    z-index: 3;
-    display: none;
-    background: linear-gradient(to right,
-            $color1 14.286%,
-            $color2 14.286% 28.57%,
-            $color3 28.57% 42.85%,
-            $color4 42.85% 57.142%,
-            $color5 57.142% 71.428%,
-            $color6 71.428% 85.714%,
-            $color7 85.714% 100%);
-}
-
-.line2 {
-    grid-area: line;
-    min-height: 10px;
-    width: 100%;
-    z-index: 3;
-}
-
-.line-grey {
-    grid-area: line;
-    min-height: 24px;
-    width: 100%;
-    z-index: 3;
-    display: none;
-    background: linear-gradient(to right,
-            #f3f3f3 14.286%,
-            #d5d5d5 14.286% 28.57%,
-            #aeaeae 28.57% 42.85%,
-            #797979 42.85% 57.142%,
-            #616161 57.142% 71.428%,
-            #373737 71.428% 85.714%,
-            #1c1c1c 85.714% 100%);
-}
-
 
 
 /* -------------------- Home -------------------- */
@@ -63,17 +13,237 @@
 .main-index{
     display: grid;
     grid-template-areas:
-        'slider slider'
-        'newmusic newmusic'
+        'banner banner'
+        'new-music new-music'
         'artists artists'
         'radio playlists'
         'suscribe suscribe'
     ;
+    margin-top: .5rem;
+
+}
+
+/* ---------- Banner ---------- */
+
+.banner{
+    grid-area: banner;
+    @include container-center;
+    width: 100%;
+}
+
+@import "../components/slider";
+
+/* -------------------- New Music -------------------- */
+
+.new-music{
+    grid-area: new-music;
+    @include container-center;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 4rem;
+
+    .new-music__title{
+        @extend .f-title;
+        grid-column: span 6;
+        justify-self: center;
+    }
+    .new-music__subtitle{
+        @extend .f-subtitle;
+        grid-column: span 6;
+        justify-self: center;
+        text-align: center;
+        max-width: 800px;
+    }
+
+    .new-music__album{
+        grid-column: span 6;
+        margin:0rem 1rem 3rem;
+
+
+        .new-music_link {
+            position: relative;
+            transition: all ease-in-out .5s;
+
+            &:hover{
+
+                .new-music__img {
+                    filter: brightness(0.3) hue-rotate(30deg);
+                    transition: all ease-in-out .5s;
+                }
+            }
+            &:hover::after{
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            &::after{
+                opacity: 0;
+                content: "Listen now";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(.9);
+        
+                background: $cWhite;
+                font-family:'MonumentExtended';
+                font-size: clamp(.8rem, 3.5vw, 1rem);
+                line-height: calc(150%);
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                white-space: nowrap;
+                padding: 1rem 1.5rem;
+                color: $cBlack;
+                transition: all ease-in-out .5s;
+            
+            }
+
+            .new-music__img {
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) { 
+
+    .new-music__album:nth-child(3),
+    .new-music__album:nth-child(4),
+    .new-music__album:nth-child(5){
+
+        margin-top: 100px;
+    }
+
+    .new-music__album:nth-child(3){
+        transform: translate(0, -30px);
+        grid-column: 1 / 3;
+    }
+    .new-music__album:nth-child(4){
+        transform: translate(0, 70px);
+        grid-column: 3 / 5;
+    }
+    .new-music__album:nth-child(5){
+        grid-column: 5 / 7;
+    }
+
+}
+
+.new-music-background{
+    grid-area: new-music;
+    background-image: url(./assets/image/pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.3);
+    z-index: -1;
+    margin-top: 24rem;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+}
+
+
+/* -------------------- Artists -------------------- */
+
+.our-artists{
+    grid-area: artists;
+    @include container-center;
+    width: inherit;
+
+    .our-artists__box{
+        grid-column: 1;
+        grid-row: 1;
+
+        .our-artists__title {
+            @extend .f-title;
+            margin-left: 1rem;
+            text-align: start;
+        }
+    
+        .our-artists__scroll-button {
+            font-family: monospace;
+            display: none;
+            width: 40px;
+            height: 40px;
+            justify-self: end;
+            z-index: 1;
+            background: transparent;
+            padding: 0.4rem 0.7rem 0.7rem 0.7rem;
+            font-size: 1.6rem;
+            line-height: 1rem;
+            border: solid 2px black;
+            color: black;
+            margin-bottom: 1rem;
+        }
+
+        .line3{
+            display: none;
+        }
+
+    }
+    
+    
+    .our-artists__list {
+        grid-column: 1;
+        grid-row: 1;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        margin-left: 1rem;
+    
+    }
+
+    
 
 }
 
 
+@import "../components/artist";
+
+@media screen and (min-width: 768px) { 
+
+    
+
+    /* -------------------- Artists -------------------- */
+
+    .our-artists{
+
+        display: grid;
+    
+        .our-artists__box{
+            grid-column: 1;
+            grid-row: 1;
+            margin: 5rem 0;
+    
+            .our-artists__title {
+                writing-mode: vertical-rl;
+                transform:scale(-1);
+                white-space: nowrap;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+            .our-artists__scroll-button {
+                display: block;
+            }
+            .line3{
+                display: block;
+            }
+    
+        }
+        
+        
+        .our-artists__list {
+            grid-column: 1;
+            overflow-x: auto;
+            margin-left: 5rem;
+            margin-top: 10rem;
+        }
+    
+    }
+}
+
+
 /* ---------- Playlists / Radio ---------- */
+
+
 
 .radio {
     grid-area: radio;
@@ -89,6 +259,7 @@
     max-width: calc(700px);
     padding-right: 1rem;
     justify-self: start;
+    @include flex(column);
 }
 
 .playlists__list, .radio__list{
@@ -190,61 +361,127 @@
 
 .suscribe {
     grid-area: suscribe;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     max-width: calc(1400px + 2rem);
+    width: 100%;
     padding: 1rem;
     justify-self: center;
     padding: 0 1rem;
-}
+    margin: 10rem 0;
 
-.suscribe__form {
-    max-width: 550px;
-    border: solid #000 2px;
-    margin: 0 1rem;
-}
+    .suscribe__title{
+        @extend .f-title2;
+        margin-bottom: 1rem;
+        max-width: 800px;
+        color: $cWhite;
+    }
 
-.suscribe__email {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.4;
-    display: block;
-    width: 100%;
-    background: transparent;
-    padding: 0 0.6rem;
-}
+    .suscribe__subtitle{
+        @extend .f-subtitle2;
+        margin-bottom: 3rem;
+        color: $cWhite;
+        max-width: 500px;
+    }
 
-.suscribe__btn {
-    font-family: Alien-League-2;
-    font-size: 1.625rem;
-    white-space: nowrap;
-    padding: 0 1.5rem;
-    height: 46px;
-    letter-spacing: 0.078rem;
-    background: var(--cBlack);
-    color: $cWhite;
-    border-left: solid 2px var(--cBlack);
-    cursor: pointer;
-}
+    .suscribe__form {
 
-.suscribe__btn:hover {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 800px;
+        border: solid $cWhite 0px;
+        margin: 0 1rem;
     
-    background: var(--color3);
-    color: var(--cBlack);
-    -webkit-text-stroke: .5px rgb(0, 0, 0);
+        .suscribe__email {
+            font-family: 'MonumentExtended';
+            font-size: 1rem;
+            line-height: 1.4;
+            color: $cWhite;
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: solid $cWhite 2px;
+            background: transparent;
+            padding: 0 1rem;
+
+            &::placeholder{
+                color: $cWhite;
+                opacity: .7;
+            }
+        }
+        
+        .suscribe__btn {
+            font-family: 'MonumentExtended';
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.1rem;
+            white-space: nowrap;
+            padding: 0 1.5rem;
+            height: 50px;
+            background-color: $cWhite;
+            
+            color: $cBlack;
+            border: solid $cWhite 2px;
+            margin-top: 2rem;
+            cursor: pointer;
+
+        
+        }
+        
+    }
 }
 
-
-
-
+.suscribe-background{
+    grid-area: suscribe;
+    background-image: url(./assets/image/hin-bong-yeung-jF946mh5QrA-unsplash.jpg);
+    background-size: cover;
+    filter: brightness(.7);
+    background-position: bottom;
+    
+    z-index: -1;
+    background-repeat: no-repeat;
+}
 
 
 @media screen and (min-width: 768px) { 
 
-    .main-index{
-        margin-top: 1rem;
+    .suscribe {
     
+        .suscribe__form {
+    
+            flex-direction: row;
+
+            .suscribe__email {
+                font-size: 1.2rem;
+            }
+            
+            .suscribe__btn {
+                background: rgba(255, 255, 255, 0.20);
+                color: $cWhite;
+                border-left: 0px;
+                margin: 0;
+                transition: ease-in-out .3s;
+
+                &:hover {
+            
+                    background: $cWhite;
+                    color: $cBlack;
+                    transition: ease-in-out .5s;
+                }
+                
+            }
+            
+        }
     }
-    
-   
     
 
 }
+
+
+
+
+

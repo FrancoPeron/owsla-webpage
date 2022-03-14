@@ -1,95 +1,211 @@
 /* -------------------- Slider -------------------- */
 
 .slider{
-    grid-area: slider;
-    max-width: calc(1400px + 2rem);
-    padding: 0 1rem;
-    justify-self: center;
-}
-
-.slider__videos {
-    min-height: 550px;
-    max-height: 650px;
-    /* animation: slide 20s ease infinite; */
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.slider__video {
-    width: 100%;
-    object-fit: cover;
-    transition: all ease-in-out 1s;
-    opacity: 0;
-}
-
-#video2, #video3{
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    min-height: 550px;
-    max-height: 650px;
-}
+    display: flex;
+    flex-direction: column;
 
 
-#video1,
-#radio1:checked~#video1,
-#radio2:checked~#video2,
-#radio3:checked~#video3{
-    opacity: 1;
+    .slider__videos {
+        position: relative;
+        /* animation: slide 20s ease infinite; */
+        
+        .slider__box-video{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0;
+            position: relative;
+            transition: all ease-in-out .5s;
 
-}
+            .slider__video {
+                height: 100%;
+                width: 100%;
+                min-height: 550px;
+                max-height: 650px;
+                object-fit: cover;
+            }
 
-/* ---------- Slider nav ---------- */
+            .slider__box-info{
+                position: absolute;
+                bottom: 0;
 
-.slider__nav {
-    padding: 0 1rem;
-}
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: space-between;
+                z-index: 1;
+                width: 100%;
+                min-height: 350px;
+                padding: 2rem 3rem;
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,0) 100%);
 
-.slider__link {
-    border: 2px solid $cBlack;
-    height: 16px;
-    width: 18px;
-    cursor: pointer;
-    transition: 1s;
-    position: relative;
-    margin-top: 1rem;
-}
+                .slider__title{
+                    font-family: 'MonumentExtended';
+                    font-size: clamp(2.5rem, 5vw, 3.5rem);
+                    font-weight: 700;
+                    letter-spacing: 0.3rem;
+                    color: $cWhite;
 
-.active{
-    width: 100%;
-}
+                    .slider__subtitle{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 1rem;
+                        
+                        &::before{
+                            content: "|";
+                            margin-right: 1rem;
+                        }
+                        
 
-.slider__link.active::after {
-    content: " ";
-    height: 101%;
-    width: 100%;
-    background-color: $cBlack;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: carousel-active-nav-item 15s linear;
-}
+                    }
 
-.slider__link:not(:last-child) {
-    margin-right: 24px;
-}
+                    .slider__title--outline{
+                        font-size: clamp(1.25rem, 5vw, 2.25rem);
+                        margin-left: .1rem;
+                        color: transparent;
+                        -webkit-text-stroke: 1.5px $cWhite;
+                    }
 
-.slider__link:hover, .active2 {
-    background: $cBlack;
-    width: 100%;
-}
+                }
 
-@keyframes carousel-active-nav-item {
-    from {
-        width: 0%;
+                .slider__btn{
+                    font-family:'MonumentExtended';
+                    font-size: clamp(.8rem, 3.5vw, 1rem);
+                    padding: 1rem 1.5rem;
+                    line-height: calc(150%);
+                    letter-spacing: 0.3rem;
+                    white-space: nowrap;
+                    background: transparent;
+                    color: $cWhite;
+                    border: solid 2px $cWhite;
+                    transition: ease-in-out .3s;
+                    cursor: pointer;
+                    margin-bottom: 1rem;
+
+                    -webkit-text-stroke: medium;
+                    text-transform: uppercase;
+                    font-weight: 300;
+
+                    &:hover{
+                        background: $cWhite;
+                        color: $cBlack;
+                        -webkit-text-stroke: .5px $cBlack;
+                        transition: ease-in-out .5s;
+                        -webkit-text-stroke: medium;
+                    }
+                }
+            }
+        }
+
+        #video1{
+            .slider__subtitle{
+                
+                &::before{
+                    color: $color2;
+                }
+                
+
+            }
+        }
+    
+        #video2, #video3{
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            .slider__subtitle{
+                
+                &::before{
+                    color: $color5;
+                }
+                
+
+            }
+        }
+        
+        
+        #radio1:checked~#video1,
+        #radio2:checked~#video2,
+        #radio3:checked~#video3{
+            opacity: 1;
+            transition: all ease-in-out .5s;
+        
+        }
+    
     }
 
-    to {
-        width: 100%;
-    }
+    /* ---------- Slider nav ---------- */
 
+    .slider__nav {
+
+        .slider__link {
+            border: 2px solid $cBlack;
+            height: 16px;
+            width: 18px;
+            cursor: pointer;
+            transition: 1s;
+            position: relative;
+            margin-top: 1rem;
+        }
+        
+        .active{
+            width: 100%;
+        }
+    
+        .slider__link.active::after {
+            content: " ";
+            height: 101%;
+            width: 100%;
+            background-color: $cBlack;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: carousel-active-nav-item 15s linear;
+        }
+        
+        .slider__link:not(:last-child) {
+            margin-right: 24px;
+        }
+        
+        .slider__link:hover, .active2 {
+            background: $cBlack;
+            width: 100%;
+        }
+        
+        @keyframes carousel-active-nav-item {
+            from {
+                width: 0%;
+            }
+        
+            to {
+                width: 100%;
+            }
+        
+        }
+    }
 }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .slider{
+        .slider__nav {
+            .slider__link {
+                width: 33.33333333%;
+            }
+
+            .slider__link:hover, .active2 {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+
+/*#t=30*/

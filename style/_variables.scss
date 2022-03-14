@@ -9,3 +9,19 @@ $color6: #ff0000;
 $color7: #0000ff;
 
 $min: minmax(240px, 1fr);
+
+
+@mixin container-center {
+    max-width: calc(1400px + 2rem);
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+
+

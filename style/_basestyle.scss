@@ -87,20 +87,19 @@ textarea:focus:-ms-input-placeholder{color: transparent;}
 
 
 
-body {
-    font-family: Alien-League-2;
-    background-color: #ffffff;
-    
-    display: grid;
-    grid-template-areas:
-        'line' 
-        'header'
-        'main'
-        'footer'
-    ;
-    /*  display: flex;
-    flex-direction: column; */
-    height: 100vh;
-    line-height: inherit;
+input[type="radio"] {
+    display: none;
 }
 
+
+.c-c1{color: $color1;}
+.c-c2{color: $color2;}
+.c-c3{color: $color3;}
+.c-c4{color: $color4;}
+.c-c5{color: $color5;}
+.c-c6{color: $color6;}
+.c-c7{color: $color7;}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
