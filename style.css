@@ -240,10 +240,10 @@ input[type="radio"] {
 .f-text, .f-subtitle, .new-music .new-music__subtitle, .f-subtitle2, .suscribe .suscribe__subtitle {
   font-family: 'Montserrat', sans-serif; }
 
-.f-monument, .f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title, .f-title2, .suscribe .suscribe__title, .f-headline, .artist .artist__name, .nav .nav__list .nav__item .nav__link {
+.f-monument, .f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title, .radio .radio__title, .radio .radio__list .radio__item .radio__num, .f-title2, .suscribe .suscribe__title, .f-headline, .artist .artist__name, .nav .nav__list .nav__item .nav__link {
   font-family: "MonumentExtended", Helvetica, Roboto, Arial, sans-serif; }
 
-.f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title {
+.f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title, .radio .radio__title, .radio .radio__list .radio__item .radio__num {
   font-size: clamp(2.2rem, 5vw, 2.5rem);
   line-height: calc(120%);
   font-weight: 500;
@@ -1102,16 +1102,34 @@ section {
 
 .radio {
   grid-area: radio;
+  max-width: calc(1400px + 2rem);
+  padding: 0 1rem;
+  justify-self: center;
   width: 100%;
-  max-width: calc(700px);
-  padding-left: 1rem;
-  justify-self: end; }
-
-.radio__list {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%; }
+  padding-left: 1rem; }
+  .radio .radio__title {
+    margin-bottom: 3rem;
+    grid-column: span 2; }
+  .radio .radio__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%; }
+    .radio .radio__list .radio__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 3rem; }
+      .radio .radio__list .radio__item .radio__num {
+        min-width: 50px;
+        font-size: clamp(3rem, 5vw, 3.5rem);
+        margin-left: 0.1rem;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #000000;
+        line-height: calc(150%);
+        margin-right: 2rem;
+        margin-bottom: 0; }
 
 .radio__link:nth-child(1) {
   position: absolute;

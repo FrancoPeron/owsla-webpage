@@ -442,19 +442,53 @@
 
 .radio {
     grid-area: radio;
+    @include container-center;
     width: 100%;
-    max-width: calc(700px);
     padding-left: 1rem;
-    justify-self: end;
+
+    .radio__title{
+        @extend .f-title;
+        margin-bottom: 3rem;
+        grid-column: span 2;
+    }
+
+
+    .radio__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+
+        .radio__item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            margin-bottom: 3rem;
+
+            .radio__num{
+                @extend .f-title;
+
+                min-width: 50px;
+
+                font-size: clamp(3rem, 5vw, 3.5rem);
+                margin-left: 0.1rem;
+                color: transparent;
+                -webkit-text-stroke: 1.5px #000000;
+                line-height: calc(150%);
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 
-.radio__list{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
+
+
+
 
 .radio__link:nth-child(1) {
     position: absolute;
