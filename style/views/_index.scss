@@ -206,7 +206,12 @@
             margin-bottom: 1rem;
         }
 
-        .line3{
+        .our-artists__line{
+            height: 2px !important;
+            width: 100%;
+            background: $cBlack;
+            opacity: 1;
+            margin: 1.2rem 1.2rem 1.2rem 2rem;
             display: none;
         }
 
@@ -253,7 +258,8 @@
             .our-artists__scroll-button {
                 display: block;
             }
-            .line3{
+            .our-artists__line{
+                
                 display: block;
             }
     

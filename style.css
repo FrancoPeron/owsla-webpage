@@ -305,6 +305,7 @@ input[type="radio"] {
   grid-area: header;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center; }
   .header .header__logo-burger {
     display: flex;
@@ -574,7 +575,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   display: grid;
-  grid-template-areas: 'line'  'line-grey'  'header' 'main' 'footer';
+  grid-template-areas: 'line'  'header' 'main' 'footer';
   background-image: url(./assets/image/background1.png);
   background-repeat: repeat-x;
   background-size: 74px; }
@@ -598,7 +599,7 @@ body {
   width: 100%;
   z-index: 3; }
 
-.line3 {
+.our-artists__line {
   height: 2px !important;
   width: 100%;
   background: #000000;
@@ -942,7 +943,12 @@ section {
       border: solid 2px black;
       color: black;
       margin-bottom: 1rem; }
-    .our-artists .our-artists__box .line3 {
+    .our-artists .our-artists__box .our-artists__line {
+      height: 2px !important;
+      width: 100%;
+      background: #000000;
+      opacity: 1;
+      margin: 1.2rem 1.2rem 1.2rem 2rem;
       display: none; }
   .our-artists .our-artists__list {
     grid-column: 1;
@@ -1002,7 +1008,7 @@ section {
         margin-bottom: 0; }
       .our-artists .our-artists__box .our-artists__scroll-button {
         display: block; }
-      .our-artists .our-artists__box .line3 {
+      .our-artists .our-artists__box .our-artists__line {
         display: block; }
     .our-artists .our-artists__list {
       grid-column: 1;
