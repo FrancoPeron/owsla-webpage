@@ -222,16 +222,66 @@
     justify-content: center;
 
     .nav__icon {
-        margin: 1rem 0.5rem;
+        margin: 0.5rem;
+        display: flex;
 
         a{
-            font-size: var(--iconsize);
             padding: .5rem;
+
+            svg{
+
+                height: 24px;
+                width: auto;
+
+                path{
+                    fill: $cWhite;
+                }
+                circle{
+                    fill: $cWhite;
+                }
+            }
+
+            #soundcloud{
+                height: 20px;
+            }
+
+            &:hover{
+                path{
+                    fill: $color1;
+                }
+                circle{
+                    fill: $cWhite;
+                }
+            }
+            
         }
     }
 
 }
 
+.nav__solcial-media--column {
+    flex-direction: column;
+    
+    .nav__icon {
+        margin: 0.5rem;
+        display: flex;
+
+        a{
+            padding: .5rem;
+
+            svg{
+
+                height: 28px;
+                width: 28px;
+            
+            }
+
+            #soundcloud{
+                width: 32px;
+            }
+        }
+    }
+}
 
 
 .nav__icon--color a i:before, .nav__icon--color a i span:before {
@@ -239,9 +289,6 @@
     -webkit-text-fill-color: var(--cWhite);
 }
 
-.nav__solcial-media--column {
-    flex-direction: column;
-}
 
 
 
@@ -260,11 +307,12 @@
 
     .header{
         justify-content: space-between;
-        padding: 2rem 1rem 3rem;
+        padding: 2rem 2rem 3rem;
 
         .header__logo-burger{
             width: fit-content;
             padding: 0;
+            margin-right: 3%;
 
             .header__logo img {
                 max-height: 100px;
@@ -334,25 +382,14 @@
     }
 
 
-    .nav__solcial-media--hidden{
+ /*    .nav__solcial-media--hidden{
         display: none;
     }
-
+ */
 }
 
 @media screen and (min-width: 1280px) {
 
-      /* -------------------- Header / Navbar -------------------- */
-
-        .header{
-        padding: 2rem 3rem 3rem;
-
-        .header__logo-burger{
-            margin-right: 3%;
-
-        
-        }
-    }
 
     /* -------------------- Header / Navbar -------------------- */
 

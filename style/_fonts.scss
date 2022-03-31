@@ -29,7 +29,7 @@
     src: url('./assets/fonts/MonumentExtended-Black.otf') format('opentype')
 }
 
-.f-text{
+.f-montserrat{
     font-family: 'Montserrat', sans-serif;
     //font-family: "Neue Helvetica W01", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -38,59 +38,149 @@
     font-family: "MonumentExtended", Helvetica, Roboto, Arial, sans-serif;
 }
 
+
+.f-bt{
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* 94px */
+}
+.f-h{
+    font-size: clamp(1.825rem, 5vw, 2.625rem); /* 42px */
+}
+.f-t1{
+    font-size: clamp(1.5rem, 4vw, 2rem); /* 32px */
+}
+.f-t2{
+    font-size: clamp(1.225rem, 4vw, 1.5rem); /* 24px */
+}
+.f-hl1{
+    font-size: 	clamp(1rem, 3.75vw, 1.3125rem); /* 21px */
+}
+.f-hl2{
+    font-size: clamp(1rem, 3.75vw, 1.125rem); /* 18px */
+}
+.f-b1{
+    font-size: 1rem; /* 16px */
+}
+.f-b2{
+    font-size: 0.875rem; /* 14px */
+}
+
+
 .f-title {
     @extend .f-monument;
-    font-size: clamp(2.2rem, 5vw, 2.5rem);
+    @extend .f-h;
     line-height: calc(120%);
     font-weight: 500;
     letter-spacing: 0.1rem;
     color: $cBlack;
     margin-bottom: 2rem;
-    text-align: center;
-}
-
-.f-title2 {
-    @extend .f-monument;
-    font-size: clamp(1.6rem, 5vw, 2rem);
-    line-height: calc(120%);
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    color: $cBlack;
     text-align: center;
 }
 
 .f-subtitle {
-    @extend .f-text;
-    font-size: clamp(.8rem, 4vw, 1.5rem);
-    line-height: calc(150%);
+    @extend .f-montserrat;
+    @extend .f-t2;
+    line-height: calc(130%);
     font-weight: 500;
     letter-spacing: normal;
     color: #1c1c1c;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
-.f-subtitle2 {
-    @extend .f-text;
-    font-size: clamp(.8rem, 4vw, 1.2rem);
+
+.f-title2{
+    @extend .f-monument;
+    @extend .f-t1;
     line-height: calc(120%);
     font-weight: 500;
-    letter-spacing: normal;
-    color: #1c1c1c;
+    letter-spacing: 0.1rem;
+    color: $cBlack;
     text-align: center;
 }
 
-.f-headline {
-    @extend .f-monument;
-    font-size: clamp(.8rem, 4vw, 1.2rem);
-    line-height: calc(150%);
+.f-subtitle2{
+    @extend .f-montserrat;
+    @extend .f-hl1;
+    line-height: calc(130%);
     font-weight: 500;
     letter-spacing: normal;
     color: #1c1c1c;
-    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.f-headline{
+    @extend .f-monument;
+    @extend .f-hl2;
+    line-height: calc(140%);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    color: $cBlack;
 }
 
 
+.f-body{
+    @extend .f-montserrat;
+    @extend .f-b1;
+    line-height: calc(140%);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: $cBlack;
+    text-align: center;
+}
+
+
+
+.btn{
+    @extend .f-monument;
+    @extend .f-b1;
+    line-height: calc(150%);
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-text-stroke: thin;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    padding: 1rem 1.5rem;
+
+    &__primary{
+        @extend .btn;
+        color: $cBlack;
+        background: $cWhite;
+    }
+
+    &__outline{
+
+        @extend .btn;
+        color: $cWhite;
+        border: solid 2px $cWhite;
+        background: transparent;
+        
+        &2{
+            @extend .btn;
+            @extend .btn__outline;
+            background: rgba(255, 255, 255, 0.20);
+        }
+
+        &:hover{
+            background: $cWhite;
+            color: $cBlack;
+
+            transition: ease-in-out .5s;
+            -webkit-text-stroke: 1px $cBlack;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+/* 
 .newmusic__album-title,
 .artist__name,
 .merch__item-name {
@@ -107,3 +197,5 @@
     line-height: calc(110%);
     -webkit-text-stroke: .2px rgb(0, 0, 0);
 }
+
+ */

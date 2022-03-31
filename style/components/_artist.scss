@@ -15,6 +15,9 @@
     }
 
     .artist__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
         right: 0;
         opacity: 0;
@@ -31,8 +34,7 @@
     }
 
     &:hover>.artist__info {
-        display: flex;
-        flex-direction: column;
+        
         max-width: 100px;
         opacity: 1;
         transition: all ease-in-out .5s;

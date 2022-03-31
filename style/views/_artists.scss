@@ -8,6 +8,6 @@
     grid-template-columns: repeat(auto-fit, $min);
     gap: 1rem;
     width: 100%;
-    @include container-center;   
+    @extend .container-center;   
 }
 

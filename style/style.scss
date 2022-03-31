@@ -40,11 +40,43 @@ body {
 
 }
 
+
+main {
+    grid-area: main;
+    width: 100vw;
+    min-width: 360px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+
+
+.container-center{
+    max-width: calc(1400px + 2rem);
+    padding: 0 1.2rem;
+    justify-self: center;
+}
+
+
 @media screen and (min-width: 1020px) { 
     body {
         background-size: 180px;
 
     }
+
+    section {
+        margin-bottom: 12rem;
+    }
+    
+
+    .container-center { 
+        padding: 0 2rem;
+    }
+
+
 }
 
 /* ---------- Line ---------- */
@@ -98,52 +130,18 @@ body {
 } */
 
 
-main {
-    grid-area: main;
-    width: 100vw;
-    min-width: 360px;
-    flex: 1;
-}
-
-section {
-    margin-bottom: 8rem;
-}
-
-
 
 
 /* ------------------------------------------------------------------- */
 
 
-.main-music_title,
-.main-artists__title,
-.main-radio__title,
-.main-videos__title,
-.main-about__title,
-.main-merch__title,
-.main-contact__title {
-    font-size: 2.625rem;
-    line-height: 140%;
-    font-weight: 600;
-    margin-bottom: 1.25rem;
-}
 
-.music__releases, .about__article, .artists__artists {
+.about__article, .artists__artists {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.contact__suscribe-title,
-.contact__demo-title,
-.contact__description-title {
-    font-size: 1.75rem;  
-    line-height: 150%;
-    margin-bottom: 1rem;
-    -webkit-text-stroke: .5px rgb(0, 0, 0);
-}
-
 
 .main-music,
 .main-artists,
@@ -157,14 +155,7 @@ section {
     align-items: center;
 }
 
-.main-music,
-.main-artists,
-.main-radio,
-.main-video,
-.main-merch,
-.main-contact{
-    padding: 0 1rem;
-}
+
 
 @import "./views/index";
 @import "./views/about";
