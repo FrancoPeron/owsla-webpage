@@ -1,13 +1,5 @@
 /* ---------- Fonts ---------- */
 
-/* @font-face {
-    font-family: 'Alien-League-2';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./assets/fonts/alienleagueiibold.ttf') format('truetype')
-}
- */
-
 @font-face {
     font-family: 'MonumentExtended';
     font-style: normal;
@@ -31,7 +23,6 @@
 
 .f-montserrat{
     font-family: 'Montserrat', sans-serif;
-    //font-family: "Neue Helvetica W01", Helvetica, Roboto, Arial, sans-serif;
 }
 
 .f-monument{
@@ -39,6 +30,9 @@
 }
 
 
+.f-bt2{
+    font-size: clamp(2.8rem, 5vw, 4rem); /* 94px */
+}
 .f-bt{
     font-size: clamp(2.5rem, 5vw, 3.5rem); /* 94px */
 }
@@ -128,55 +122,6 @@
     color: $cBlack;
     text-align: center;
 }
-
-
-
-.btn{
-    @extend .f-monument;
-    @extend .f-b1;
-    line-height: calc(150%);
-    letter-spacing: 0.2rem;
-    font-weight: 300;
-    white-space: nowrap;
-    text-transform: uppercase;
-    -webkit-text-stroke: thin;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-    padding: 1rem 1.5rem;
-
-    &__primary{
-        @extend .btn;
-        color: $cBlack;
-        background: $cWhite;
-    }
-
-    &__outline{
-
-        @extend .btn;
-        color: $cWhite;
-        border: solid 2px $cWhite;
-        background: transparent;
-        
-        &2{
-            @extend .btn;
-            @extend .btn__outline;
-            background: rgba(255, 255, 255, 0.20);
-        }
-
-        &:hover{
-            background: $cWhite;
-            color: $cBlack;
-
-            transition: ease-in-out .5s;
-            -webkit-text-stroke: 1px $cBlack;
-        }
-
-    }
-
-
-}
-
-
 
 
 

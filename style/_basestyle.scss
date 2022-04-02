@@ -101,3 +101,49 @@ input[type="radio"] {
 .shadow{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
+
+.btn{
+    @extend .f-monument;
+    @extend .f-b1;
+    line-height: calc(150%);
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-text-stroke: thin;
+    width: fit-content;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    padding: 1rem 1.5rem;
+
+    &__primary{
+        @extend .btn;
+        color: $cBlack;
+        background: $cWhite;
+    }
+
+    &__outline{
+
+        @extend .btn;
+        color: $cWhite;
+        border: solid 2px $cWhite;
+        background: transparent;
+        
+        &2{
+            @extend .btn;
+            @extend .btn__outline;
+            background: rgba(255, 255, 255, 0.20);
+        }
+
+        &:hover{
+            background: $cWhite;
+            color: $cBlack;
+
+            transition: ease-in-out .5s;
+            -webkit-text-stroke: 1px $cBlack;
+        }
+
+    }
+
+
+}

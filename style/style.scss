@@ -1,22 +1,7 @@
-:root {
-    --cBlack: #000000;
-    --cWhite: #ffffff;
-    --color1: #cbcbcb;
-    --color2: #ffff00;
-    --color3: #00ffff;
-    --color4: #00ff00;
-    --color5: #ff00ff;
-    --color6: #ff0000;
-    --color7: #0000ff;
-
-    --iconsize: 30px;
-
-}
-
 
 @import "variables";
 @import "basestyle";
-@import "iconmoon";
+
 @import "fonts";
 
 @import "./components/header";
@@ -40,7 +25,6 @@ body {
 
 }
 
-
 main {
     grid-area: main;
     width: 100vw;
@@ -52,14 +36,11 @@ section {
     margin-bottom: 6rem;
 }
 
-
-
 .container-center{
     max-width: calc(1400px + 2rem);
     padding: 0 1.2rem;
     justify-self: center;
 }
-
 
 @media screen and (min-width: 1020px) { 
     body {
@@ -88,47 +69,27 @@ section {
     z-index: 3;
     display: none;
     background: linear-gradient(to right,
-            $color1 14.286%,
-            $color2 14.286% 28.57%,
-            $color3 28.57% 42.85%,
-            $color4 42.85% 57.142%,
-            $color5 57.142% 71.428%,
-            $color6 71.428% 85.714%,
-            $color7 85.714% 100%);
+        $color1 14.286%,
+        $color2 14.286% 28.57%,
+        $color3 28.57% 42.85%,
+        $color4 42.85% 57.142%,
+        $color5 57.142% 71.428%,
+        $color6 71.428% 85.714%,
+        $color7 85.714% 100%);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .line{
+        display: flex;
+    }
+
 }
 
 .line2 {
-    grid-area: line;
     min-height: 10px;
     width: 100%;
-    z-index: 3;
 }
-
-.our-artists__line{
-    height: 2px !important;
-    width: 100%;
-    background: $cBlack;
-    opacity: 1;
-    margin: 1.2rem 1.2rem 1.2rem 2rem;
-
-}
-
-/* .line-grey {
-    grid-area: line-grey;
-    min-height: 24px;
-    width: 100%;
-    z-index: 3;
-    display: none;
-    background: linear-gradient(to right,
-            #f3f3f3 14.286%,
-            #d5d5d5 14.286% 28.57%,
-            #aeaeae 28.57% 42.85%,
-            #797979 42.85% 57.142%,
-            #616161 57.142% 71.428%,
-            #373737 71.428% 85.714%,
-            #1c1c1c 85.714% 100%);
-} */
-
 
 
 
@@ -158,58 +119,11 @@ section {
 
 
 @import "./views/index";
-@import "./views/about";
-@import "./views/artists";
-@import "./views/contact";
-@import "./views/merch";
 @import "./views/music";
+@import "./views/artists";
 @import "./views/radio";
 @import "./views/videos";
-
-
-
-
-
-.videos__title-video {
-
-    font-size: 2rem;
-    letter-spacing: 0.048rem;
-    line-height: 150%;
-    margin: 1rem 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-
-    :root{
-        --iconsize: 24px;
-    }
-    [class^="icon-"], [class*=" icon-"] {
-        font-size: var(--iconsize);
-    }
-
-    .line{
-        display: flex;
-    }
-
-   
-
-
-
-}
-
+@import "./views/merch";
+@import "./views/about";
+@import "./views/contact";
 

@@ -3,11 +3,39 @@
 
 
 /* ------------------------------ Artists ------------------------------ */
-.main-artists__list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, $min);
-    gap: 1rem;
-    width: 100%;
-    @extend .container-center;   
+
+
+$artists-img: minmax(330px, 1fr);
+
+.main-artists{
+
+
+    .main-artists__title{
+        @extend .f-title;
+        margin: 3rem;
+        text-transform: uppercase;
+
+        &::before{
+            content: "-";
+            @extend .f-title;
+            margin-right: 3rem;
+        }
+
+        &::after{
+            content: "-";
+            @extend .f-title;
+            margin-left: 3rem;
+        }
+    }
+
+    .main-artists__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, $artists-img);
+        gap: 1rem;
+        width: 100%;
+        @extend .container-center;   
+    }
+    
 }
+
 

@@ -1,8 +1,10 @@
+
+
 .artist{
     scroll-snap-align: start;
 
     .artist__img {
-        width: 306px;
+        width: 298px;
         height: 400px;
         object-fit: cover;
         cursor: pointer;
@@ -46,9 +48,12 @@
 
 }
 
-@media screen and (min-width: 768px) { 
+.modal-title{
+    @extend .f-monument;
+    @extend .f-t2;
+}
 
-    /* -------------------- Artist -------------------- */
+@media screen and (min-width: 768px) { 
 
     .artist{
         scroll-snap-align: end;

@@ -2,13 +2,197 @@
 
 /* ------------------------------ Redio ------------------------------ */
 
+
+$radio-grid: minmax(240px, 1fr);
+
 .main-radio{
     width: 100%;
     max-width: 1400px;
     justify-self: center;
+
+    .main-radio__section{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, $radio-grid);
+        gap: 1rem;
+        width: 100%;
+        margin-top: 3rem;
+        @extend .container-center;  
+
+        .main-radio__precentation{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: $cBlack;
+            grid-column: 1/-1;
+
+            .main-radio__info{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 3rem;
+
+                .main-radio__title{
+                    @extend .f-monument;
+                    @extend .f-bt2;
+                    color: transparent;
+                    -webkit-text-stroke: 1.5px #ffffff;
+                    text-align: start;
+                    margin-bottom: 2rem
+                }
+
+                .main-radio__subtitle{
+                    @extend .f-headline;
+                    text-align: start;
+                    color: $cWhite;
+                    
+                }
+
+                .main-radio__line{
+                    height: 2px !important;
+                    width: 70%;
+                    background: $cWhite;
+                    opacity: 1;
+                    margin: 3rem 0;
+                }
+
+                .main-radio__btn{
+                    @extend .btn__outline;
+                }
+            }
+
+            .main-radio__info-img{
+
+                position: absolute;
+                right: 0;
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                opacity: 0.2;
+
+                
+                img{
+                    filter: grayscale(1);
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .main-radio__item{
+            position: relative;
+
+            .main-radio__img{
+                width: 100%;
+                
+            }
+
+            .main-radio__name{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                opacity: 0;
+                transition: all ease-in-out .5s;
+                padding: 1rem;
+
+                            
+                .main-radio__subtitle {
+                    @extend .f-headline;
+                    color: $cWhite;
+                    margin-bottom: 1rem;
+                }
+
+                .main-radio__description {
+                    @extend .f-body;
+                    color: $cWhite;
+                    
+                }
+            }
+    
+            &:hover .main-radio__name {
+                opacity: 1;
+                transition: all ease-in-out .5s;
+            }
+        }
+
+    }
 }
 
-.radio-episodes * {
-    margin-bottom: 1rem;
+
+.line-grey {
+    grid-column: 1/-1;
+    min-height: 16px;
+    width: 100%;
+    margin: 2rem 0;
+    background: linear-gradient(to left,
+            #f3f3f3 14.286%,
+            #d5d5d5 14.286% 28.57%,
+            #aeaeae 28.57% 42.85%,
+            #797979 42.85% 57.142%,
+            #616161 57.142% 71.428%,
+            #373737 71.428% 85.714%,
+            #1c1c1c 85.714% 100%);
+}
+
+.player{
+    right: 0;
+    left: 0;
+    height: 180px;
+
+    .player__btn{
+        position: absolute;
+        right: 0;
+        top: -29px;
+        background-color: #fcfcfc;
+        border: 3px solid #d7d7d7;
+        border-bottom: 3px solid #fcfcfc;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+
+
+    .main-radio{
+       
     
+        .main-radio__section{
+
+            .main-radio__precentation{
+                flex-direction: row;
+
+                
+                .main-radio__info{
+                    width: 48%;  
+                }
+
+                .main-radio__info-img{
+
+                    position: absolute;
+                    right: 0;
+                    overflow: hidden;
+                    height: 100%;
+                    width: 52%;
+                    opacity: 1;
+
+                    
+                    img{
+                        filter: grayscale(1);
+                        object-fit: cover;
+                        clip-path: polygon(10% 0%, 100% 0%,100% 100%,0% 100%);
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+        
+            }
+        }
+    }
 }

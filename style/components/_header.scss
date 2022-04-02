@@ -1,13 +1,40 @@
 
 
-/* -------------------- Header / Navbar -------------------- */
+/* -------------------- Header -------------------- */
 
 .header{
     grid-area: header;
 
-
     @include flex(row,nowrap);
     align-items: center;
+
+    #burger{
+        display: none;
+
+        &:checked + .header__logo-burger > .burger-btn > .burger{
+            width: 0;
+            
+        }
+        &:checked + .header__logo-burger > .burger-btn > .burger::before{
+            top: 0;
+            width: 34px;
+            transform: rotate(-45deg);
+            transition: all .5s;
+        }
+        &:checked + .header__logo-burger > .burger-btn > .burger::after{
+            top: 0;
+            width: 34px;
+            transform: rotate(45deg);
+            transition: all .5s;
+        }
+        
+        &:checked ~ .nav{
+            
+            max-height: 100%;
+            transition: all 1s;
+        }
+        
+    }
 
     .header__logo-burger{
         display: flex;
@@ -17,76 +44,52 @@
         width: 100%;
         padding: 1rem;
         z-index: 2;
+
+        .burger-btn{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            height: 34px;
+            width: 34px;
+            cursor: pointer;
+        
+            .burger{
+                position: relative;
+                width: 22px;
+                &::before{
+                    top: -10px;
+                    width: 34px;
+                    transition: all .5s;
+                }
+                &::after{
+                    top: 10px;
+                    width: 28px;
+                    transition: all .5s;
+                }
+            }
+        
+            .burger,
+            .burger::before,
+            .burger::after{
+                height: 3px;
+                border-radius: 5px;
+                background-color: $cWhite;
+            }
+        
+            .burger::before,
+            .burger::after{
+                content: "";
+                position: absolute;
+                right: 0;
+            }
+        }
     }
     
     .header__logo img {
         max-height: 42px;
         content: url(./assets/image/owsla.png);
     }
-    
-}
 
-/* ---------- Burger ---------- */
-
-#burger{
-    display: none;
-}
-
-.burger-btn{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 34px;
-    width: 34px;
-    cursor: pointer;
-
-    .burger{
-        position: relative;
-        width: 22px;
-        &::before{
-            top: -10px;
-            width: 34px;
-            transition: all .5s;
-        }
-        &::after{
-            top: 10px;
-            width: 28px;
-            transition: all .5s;
-        }
-    }
-
-    .burger,
-    .burger::before,
-    .burger::after{
-        height: 3px;
-        border-radius: 5px;
-        background-color: $cWhite;
-    }
-
-    .burger::before,
-    .burger::after{
-        content: "";
-        position: absolute;
-        right: 0;
-    }
-}
-
-
-#burger:checked + .header__logo-burger > .burger-btn > .burger{
-    width: 0;
-    
-}
-#burger:checked + .header__logo-burger > .burger-btn > .burger::before{
-    top: 0;
-    width: 34px;
-    transform: rotate(-45deg);
-    transition: all .5s;
-}
-#burger:checked + .header__logo-burger > .burger-btn > .burger::after{
-    top: 0;
-    width: 34px;
-    transform: rotate(45deg);
-    transition: all .5s;
 }
 
 /* ---------- Navbar ---------- */
@@ -150,71 +153,61 @@
                     transition: all .5s;
                 }
             }
+
+
+
         }
     }
 }
 
-
-
-
-#burger:checked ~ .nav{
-    
-    max-height: 100%;
-    transition: all 1s;
-}
-
-
-
-
 .nav__item:nth-child(1),
 .nav__item:nth-child(1).nav__item--active .nav__link::after,
 .nav__item:nth-child(1) .nav__link:hover::after{
-    background-color: var(--color1);
+    background-color: $color1;
     width: 100%;
 }
 
 .nav__item:nth-child(2),
 .nav__item:nth-child(2).nav__item--active .nav__link::after,
 .nav__item:nth-child(2) .nav__link:hover::after{
-    background-color: var(--color2);
+    background-color: $color2;
     width: 100%;
 }
 
 .nav__item:nth-child(3),
 .nav__item:nth-child(3).nav__item--active .nav__link::after,
 .nav__item:nth-child(3) .nav__link:hover::after{
-    background-color: var(--color3);
+    background-color: $color3;
     width: 100%;
 }
 
 .nav__item:nth-child(4),
 .nav__item:nth-child(4).nav__item--active .nav__link::after,
 .nav__item:nth-child(4) .nav__link:hover::after{
-    background-color: var(--color4);
+    background-color: $color4;
     width: 100%;
 }
 
 .nav__item:nth-child(5),
 .nav__item:nth-child(5).nav__item--active .nav__link::after,
 .nav__item:nth-child(5) .nav__link:hover::after{
-    background-color: var(--color5);
+    background-color: $color5;
     width: 100%;
 }
 
 .nav__item:nth-child(6),
 .nav__item:nth-child(6).nav__item--active .nav__link::after,
 .nav__item:nth-child(6) .nav__link:hover::after{
-    background-color: var(--color6);
+    background-color: $color6;
     width: 100%;
 }
 
 .nav__item:nth-child(7),
 .nav__item:nth-child(7).nav__item--active .nav__link::after,
 .nav__item:nth-child(7) .nav__link:hover::after{
-    background-color: var(--color7);
+    background-color: $color7;
     width: 100%;
 }
-
 
 .nav__solcial-media{
     display: flex;
@@ -283,24 +276,6 @@
     }
 }
 
-
-.nav__icon--color a i:before, .nav__icon--color a i span:before {
-    color: var(--cWhite);
-    -webkit-text-fill-color: var(--cWhite);
-}
-
-
-
-
-.nav__link--color, .nav__link--color:hover{
-    color: var(--cWhite);
-    -webkit-text-stroke: 0;
-}
-
-.nav__link--color:hover::after {
-    display: none;
-}
-
 @media screen and (min-width: 1024px) {
 
     /* -------------------- Header / Navbar -------------------- */
@@ -308,6 +283,11 @@
     .header{
         justify-content: space-between;
         padding: 2rem 2rem 3rem;
+
+        .burger{
+            display: none;
+        }
+    
 
         .header__logo-burger{
             width: fit-content;
@@ -318,19 +298,14 @@
                 max-height: 100px;
                 content: url(./assets/image/owslaLogo.svg);
             }
+
+            .burger-btn{
+                display: none;
+            }
         
         }
     }
 
-    /* ---------- Burger ---------- */
-    .burger{
-        display: none;
-    }
-
-    
-    .burger-btn{
-        display: none;
-    }
     /* ---------- Navbar ---------- */
 
     .nav{
@@ -370,7 +345,6 @@
 
     }
 
-
     .nav__item:nth-child(1),
     .nav__item:nth-child(2),
     .nav__item:nth-child(3),
@@ -381,11 +355,6 @@
         background-color: transparent;
     }
 
-
- /*    .nav__solcial-media--hidden{
-        display: none;
-    }
- */
 }
 
 @media screen and (min-width: 1280px) {
@@ -398,6 +367,7 @@
         justify-content: space-between;
         width: 100%;
     }
+
     .nav__solcial-media{
         display: flex;
     }
