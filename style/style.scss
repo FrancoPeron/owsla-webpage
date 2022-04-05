@@ -37,9 +37,14 @@ section {
 }
 
 .container-center{
-    max-width: calc(1400px + 2rem);
+    max-width: calc(1500px + 2rem);
     padding: 0 1.2rem;
     justify-self: center;
+}
+
+.container-full{
+    width: 100%;
+    padding: 0 1.2rem;
 }
 
 @media screen and (min-width: 1020px) { 
@@ -59,6 +64,18 @@ section {
 
 
 }
+
+
+@media screen and (min-width: 1440px) { 
+
+    .container-full{
+        width: 80%;
+        min-width: 1440px;
+    }
+    
+
+}
+
 
 /* ---------- Line ---------- */
 

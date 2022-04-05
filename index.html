@@ -163,19 +163,19 @@
             <h2 class="new-music__title">Latest Releases</h2>
             <h3 class="new-music__subtitle">LOREM ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</h3>
             <div class="new-music__album d-flex flex-column shadow">
-                <a class="new-music_link" href="https://open.spotify.com/album/1Pg5Ot24fhSbQbxqV5OTZS?si=UhXpuR6ESGG9pI3eGSRoGA">
+                <a class="new-music_link" href="https://open.spotify.com/album/1Pg5Ot24fhSbQbxqV5OTZS?si=UhXpuR6ESGG9pI3eGSRoGA" target="_blank">
                     <img class="new-music__img" src="./assets/image/releases/www.jpg" alt="Release 1"></a>
                 <!-- <p class="new-music__album-title">TURN OFF THE LIGHTS EP</p> -->
                 <!-- <p class="new-music__artist">DOG BLOOD</p> -->
             </div>
             <div class="new-music__album d-flex flex-column shadow">
-                <a class="new-music_link" href="https://open.spotify.com/album/1smTOWw543bigqIoxlC8X6?si=3noUfExbQUqoo_D0UadiCg">
+                <a class="new-music_link" href="https://open.spotify.com/album/1smTOWw543bigqIoxlC8X6?si=3noUfExbQUqoo_D0UadiCg" target="_blank">
                     <img class="new-music__img" src="http://owsla.com/wp-content/uploads/2019/09/Midnight-Hour-Final.jpg" alt="Release 2"></a>
                 <!-- <p class="new-music__album-title">Midnight Hour Remixes</p> -->
                 <!-- <p class="new-music__artist">SKRILLEX, BOYS NOIZE & TY DOLLA $IGN</p> -->
             </div>
             <div class="new-music__album d-flex flex-column shadow">
-                <a class="new-music_link" href="https://open.spotify.com/album/4rKOfbv5azHLugcKVViKgN?si=9zILWWh7S7Oy7Hynku8vTQ">
+                <a class="new-music_link" href="https://open.spotify.com/album/4rKOfbv5azHLugcKVViKgN?si=9zILWWh7S7Oy7Hynku8vTQ" target="_blank">
                     <img class="new-music__img" src="http://owsla.com/wp-content/uploads/2018/12/web-resize-1.jpg" alt="Release 3"></a>
                 <!-- <p class="new-music__album-title">HORSE REMIXES</p> -->
                 <!-- <p class="new-music__artist">SALVATORE GANACCI</p> -->
@@ -1027,114 +1027,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-/* 
-
-        function toastbtn(){
-            var toastLiveExample = document.getElementById('liveToast')
-            var toast = new bootstrap.Toast(toastLiveExample)
-            toast.show()
-        }
- */
-        /* Artists Slider */
-
-        function nextArtist(){
-            let element =  document.getElementById("artists__list");
-            console.log(element.scrollLeft); //Muestra en consola la posicion del scroll
-            element.scroll({left: element.scrollLeft + 900, behavior: "smooth"});/*Obtiene la posicion del scroll de la seccion y le suma el ancho de la tarjeta para ir a la siguiente*/
-            if(element.scrollLeft>1200){
-                element.scroll({left: 0, behavior: "smooth"});
-            }
-        }
-
-        /* Auto and Manual Slider */
-
-        var cont = 2;
-        var anterior = 0
-        let links = document.getElementsByClassName("slider__link");
-        document.getElementById("radio1").checked = true;
-
-        links[0].classList.add("active");
-
-        var listen = setInterval(loop, 15000);    
-        function loop(){
-            links[anterior].classList.remove("active");
-            links[cont-1].classList.remove("active2");
-            links[cont-1].classList.add("active");
-            
-            document.getElementById('radio' + cont).checked = true;
-            anterior = cont-1
-            cont++;
-            if(cont > 3){
-                cont = 1;
-            }
-        }   
-
-        document.getElementById("label-radio1").addEventListener("click",  function(){ 
-            links[1].classList.remove("active");
-            links[2].classList.remove("active");
-            links[1].classList.remove("active2");
-            links[2].classList.remove("active2");
-            cont = 1;
-            links[cont-1].classList.add("active2");
-        });
-        document.getElementById("label-radio2").addEventListener("click",  function(){ 
-            links[2].classList.remove("active");
-            links[0].classList.remove("active");
-            links[2].classList.remove("active2");
-            links[0].classList.remove("active2");
-            cont = 2;
-            links[cont-1].classList.add("active2");
-        });
-        document.getElementById("label-radio3").addEventListener("click",  function(){ 
-            links[0].classList.remove("active");
-            links[1].classList.remove("active");
-            links[0].classList.remove("active2");
-            links[1].classList.remove("active2");
-            cont = 3
-            links[cont-1].classList.add("active2");
-        });
-
-
-
-        document.getElementById('burger').addEventListener("click",  function(){ 
-
-            if(document.getElementById('burger').checked){
-                document.body.style.overflow ="hidden";
-            }else{
-                document.body.style.overflow ="auto";
-            }
-        });
-
-        window.addEventListener("resize", () => {
-            if(window.innerWidth < 1024){
-                document.body.style.overflow ="auto";
-            }
-        });
-
-        
-        if(window.innerWidth<768){
-
-            let play_img = document.getElementsByClassName("playlists__img");
-
-            (play_img[1]).addEventListener("mouseenter", function( event ) {
-
-                play_img[0].classList.add("playlists__img--up")
-                
-            }, false);
-
-            (play_img[1]).addEventListener("mouseleave", function( event ) {
-
-                play_img[0].classList.remove("playlists__img--up")
-                
-            }, false);
-
-        }
-
-
-
-    </script>
-
+    <script src="./main.js"></script>
+    <script src="./js/slider.js"></script>
+    
 </body>
 
 </html>

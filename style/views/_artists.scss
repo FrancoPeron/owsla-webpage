@@ -32,10 +32,72 @@ $artists-img: minmax(330px, 1fr);
         display: grid;
         grid-template-columns: repeat(auto-fit, $artists-img);
         gap: 1rem;
-        width: 100%;
-        @extend .container-center;   
+        @extend .container-full;
     }
     
 }
 
 
+.artist{
+    scroll-snap-align: start;
+
+    .artist__img {
+        width: 320px;
+        height: 450px;
+        object-fit: cover;
+        cursor: pointer;
+        @extend .shadow;
+    }
+
+    .artist__name{
+        @extend .f-monument;
+        @extend .f-hl1;
+        line-height: calc(140%);
+        letter-spacing: 0.05rem;
+        color: $cBlack;
+        padding: .75rem 0;
+    }
+
+    .artist__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        background-color: #000;
+        height: 450px;
+        padding: .5rem 0;
+        transition: all ease-in-out .5s;
+        max-width: 0;
+    }
+    
+    &:hover>.artist__img {
+        filter: grayscale(100%);
+        transition: all ease-in-out .5s;
+    }
+
+    &:hover>.artist__info {
+        
+        max-width: 100px;
+        opacity: 1;
+        transition: all ease-in-out .5s;
+    }
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+}
+
+.modal-title{
+    @extend .f-monument;
+    @extend .f-t2;
+}
+
+@media screen and (min-width: 768px) { 
+
+    .artist{
+        scroll-snap-align: end;
+    }
+}
