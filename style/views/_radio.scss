@@ -7,6 +7,30 @@ $radio-grid: minmax(240px, 1fr);
 
 .main-radio{
 
+    
+    .main-radio__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        background: url(./assets/image/fondo3.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(1);
+       
+        
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(black, transparent);
+        }
+    }
+
     .main-radio__banner{
         @extend .container-full;  
         display: flex;
@@ -151,7 +175,7 @@ $radio-grid: minmax(240px, 1fr);
 .player{
     right: 0;
     left: 0;
-    max-height: 160px;
+    max-height: 180px;
 
     .player__btn{
         position: absolute;
@@ -168,7 +192,7 @@ $radio-grid: minmax(240px, 1fr);
 
 
     .main-radio{
-       
+
     
         .main-radio__banner{
 

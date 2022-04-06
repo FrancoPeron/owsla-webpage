@@ -89,6 +89,10 @@ input[type="radio"] {
     display: none;
 }
 
+button{
+    background-color: transparent;
+}
+
 
 .c-c1{color: $color1;}
 .c-c2{color: $color2;}
@@ -120,6 +124,12 @@ input[type="radio"] {
         @extend .btn;
         color: $cBlack;
         background: $cWhite;
+    }
+
+    &__secondary{
+        @extend .btn;
+        color:  $cWhite;
+        background: $cBlack;
     }
 
     &__outline{

@@ -9,30 +9,78 @@ $artists-img: minmax(330px, 1fr);
 
 .main-artists{
 
+    .main-artists__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background: url(./assets/image/fondo2.jpg);
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0% 0%, 100% 0%,100% 80%,0% 100%);
+        animation: move 160s infinite;
+        
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(black, transparent);
+        }
+    }
+
+    @keyframes move {
+        0% {
+            background-position: bottom;
+        }
+
+        50% {
+            background-position: top;
+        }
+        
+        100% {
+            background-position: bottom;
+        }
+    }
+    
+
+
 
     .main-artists__title{
-        @extend .f-title;
-        margin: 3rem;
+        @extend .f-monument;
+        @extend .f-bt2;
+        color:$cWhite;
+        
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
         text-transform: uppercase;
-
+        white-space: nowrap;
         &::before{
             content: "-";
-            @extend .f-title;
+            @extend .f-bt2;
+            color:$cWhite;
             margin-right: 3rem;
         }
 
         &::after{
             content: "-";
-            @extend .f-title;
+            @extend .f-bt2;
+            color:$cWhite;
             margin-left: 3rem;
         }
     }
 
     .main-artists__list{
+        @extend .container-full;
+        background: $cWhite;
+        padding: 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, $artists-img);
-        gap: 1rem;
-        @extend .container-full;
+        gap: 2rem;
     }
     
 }

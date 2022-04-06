@@ -30,10 +30,10 @@
                     <a class="nav__link" href="../views/artists.html">Artists</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="../views/radio.html">Radio</a>
+                    <a class="nav__link" href="../views/videos.html">Videos</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="../views/videos.html">Videos</a>
+                    <a class="nav__link" href="../views/radio.html">Radio</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="../views/merch.html">Merch</a>
@@ -114,82 +114,11 @@
     
     <main class="main-music">
 
+        <span class="main-music__background"></span>
+
         <h1 class="main-music__title">Music</h1>
         
-        <section class="main-music__list">
-
-            <a  href="" target="_blank" class="release">
-                <img class="release__img shadow" src="http://owsla.com/wp-content/uploads/2016/01/OWSLA-WWB-Final-Art-300x300.jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Owsla Worldwide Broadcast</h2>
-                    <h3 class="release__artist">Owsla</h3>.
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS009].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Like Boom</h2>
-                    <h3 class="release__artist">Nick Thayer</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS008].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Slam The Door</h2>
-                    <h3 class="release__artist">Zedd</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS007].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Kill Kill Kill</h2>
-                    <h3 class="release__artist">Kill The Noise</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS006B].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Anticipate (feat. Sam Frank)</h2>
-                    <h3 class="release__artist">Skream</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS005B].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">The Aftershave</h2>
-                    <h3 class="release__artist">Zedd</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS004].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Funk Blaster</h2>
-                    <h3 class="release__artist">KOAN Sound</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS003].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Promise Me A Rose Garden, Glow</h2>
-                    <h3 class="release__artist">The M Machine</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS002].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Shave It</h2>
-                    <h3 class="release__artist">Zedd</h3>
-                </div>
-            </a>
-            <a class="release" href="" target="__blank">
-                <img class="release__img shadow" src="../assets/image/releases/[OWS001].jpg" alt="">
-                <div class="release__info">
-                    <h2 class="release__title">Spitfire EP</h2>
-                    <h3 class="release__artist">Porter Robinson</h3>
-                </div>
-            </a>
-
-
+        <section for="target" class="main-music__list">
 
         </section>
         
@@ -294,8 +223,120 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
     <script src="../js/burger.js"></script>
+    <script src="../js/for.js"></script>
+
+
+    <script>
+        const RELEASE = {
+            1: {
+                id: 1,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS001].jpg",
+                artist: "Porter Robinson",
+                title: "Spitfire EP"
+            },
+            2: {
+                id: 2,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS002].jpg",
+                artist: "Zedd",
+                title: "Shave It"
+            },
+            3: {
+                id: 3,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS003].jpg",
+                artist: "The M Machine",
+                title: "Promise Me A Rose Garden, Glow"
+            },
+            4: {
+                id: 4,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS004].jpg",
+                artist: "KOAN Sound",
+                title: "Funk Blaster"
+            },
+            5: {
+                id: 5,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS005B].jpg",
+                artist: "Zedd",
+                title: "The Aftershave"
+            },
+            6: {
+                id: 6,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS006B].jpg",
+                artist: "Skream",
+                title: "Anticipate (feat. Sam Frank)"
+            },
+            7: {
+                id: 7,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS007].jpg",
+                artist: "Kill The Noise",
+                title: "Kill Kill Kill"
+            },
+            8: {
+                id: 8,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS008].jpg",
+                artist: "Zedd",
+                title: "Slam The Door"
+            },
+            9: {
+                id: 9,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS009].jpg",
+                artist: "Nick Thayer",
+                title: "Like Boom"
+            },
+            10: {
+                id: 10,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS010].jpg",
+                artist: "Dillon Francis",
+                title: "Something, Something, Awesome EP"
+            },
+            11: {
+                id: 11,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS011].jpg",
+                artist: "Kill The Noise & Datsik",
+                title: "Lightspeed"
+            },
+            12: {
+                id: 12,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS012].jpg",
+                artist: "OWSLA",
+                title: "OWSLA Presents Free Treats Vol. II"
+            },
+            13: {
+                id: 13,
+                link: "https://music.youtube.com/playlist?list=OLAK5uy_lMHz7-UhSpa3R3hKp9uSJb28JFy_bu1ww&feature=share",
+                img: "../assets/image/releases/[OWS013].jpg",
+                artist: "Zedd",
+                title: "Shotgun"
+            },
+        }
+        function musicItem(val){
+            const item =  
+                `
+                    <a href=`+ val.link +`" target="_blank" class="release">
+                        <img class="release__img shadow" src="`+ val.img +`" alt="">
+                        <div class="release__info">
+                            <h2 class="release__title">`+ val.title +`</h2>
+                            <h3 class="release__artist">`+ val.artist +`</h3>.
+                        </div>
+                    </a>
+                `
+                return item
+        }
+        f_for_reverse(RELEASE,musicItem)
+
+    </script>
 
 </body>
 </html>
