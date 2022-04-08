@@ -1,10 +1,10 @@
 @import "../variables";
 
-$minvideo: minmax(618px, 1fr);
+
 
 /* ------------------------------ Videos ------------------------------ */
 
-$video-img: minmax(440px, 1fr);
+$video-grid: minmax(48%, 1fr);
 
 
 .main-video{
@@ -64,19 +64,101 @@ $video-img: minmax(440px, 1fr);
         background: $cWhite;
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, $video-img);
+        grid-template-columns: repeat(auto-fit, $video-grid);
         gap: 2rem;
     }
 }
 
 
-.videos__item{
+.video-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    cursor: pointer;
+
+    .video-item__box{
+
+        position: relative;
+        transition: all ease-in-out .5s;
+
+
+        .video-item__img{
+            width: 100%;
+            object-fit: cover;
+    
+        }
+    
+        
+        &::before{
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: $cWhite;
+            background-size: cover;
+            z-index: 1;
+            border-radius: 120px;
+
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            transition: all ease-in-out .5s;
+            opacity: 0;
+        }
+    
+        
+        &::after{
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: url('./assets/image/play.svg');
+            background-size: cover;
+            margin-left: 0.2rem;
+
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all ease-in-out .5s;
+
+            z-index: 2;
+            filter: invert(1);
+            opacity: 0;
+        }
+    
+        &:hover{
+
+            &::after{
+            
+                opacity: 1;
+            }
+            &::before{
+            
+                opacity: .4;
+            }
+        }
+    }
+
+
+
+
+    .video-item__title{
+        @extend .f-monument;
+        @extend .f-hl1;
+        line-height: calc(140%);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    color: $cBlack;
+        margin: 1rem 0;
+    }
+
 }
 
-.videos__video{
+.video-modal{
+    width: 100%;
     aspect-ratio: 16/9;
-    max-width: 650px;
+    background-color: $cBlack;
 }
+

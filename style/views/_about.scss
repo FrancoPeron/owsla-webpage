@@ -25,3 +25,28 @@
 
 
 }
+@import "../variables";
+
+.main-about{
+
+    .main-about__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        background: url(https://owsla.com/wp-content/uploads/2017/05/DSC09523-1024x684.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(black, transparent);
+        }
+    }
+}

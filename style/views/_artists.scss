@@ -5,7 +5,7 @@
 /* ------------------------------ Artists ------------------------------ */
 
 
-$artists-img: minmax(330px, 1fr);
+$artists-grid: minmax(330px, 1fr);
 
 .main-artists{
 
@@ -79,7 +79,7 @@ $artists-img: minmax(330px, 1fr);
         background: $cWhite;
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, $artists-img);
+        grid-template-columns: repeat(auto-fit, $artists-grid);
         gap: 2rem;
     }
     
@@ -118,6 +118,7 @@ $artists-img: minmax(330px, 1fr);
         padding: .5rem 0;
         transition: all ease-in-out .5s;
         max-width: 0;
+    
     }
     
     &:hover>.artist__img {

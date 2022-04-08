@@ -1,5 +1,5 @@
 
-function modal(CONTENT){
+function offcanvas(DATA){
 
     var items = document.querySelectorAll(".m-btn");
     for (var i = 0; i < items.length; i++) {
@@ -9,12 +9,26 @@ function modal(CONTENT){
             var target =  e.currentTarget;
             var m_id = target.getAttribute('m-id')
             var offcanvasBody = reproductor.querySelector('.content')
-            offcanvasBody.innerHTML = CONTENT[m_id];
+            offcanvasBody.innerHTML = DATA[m_id];
             if(!show){
             setTimeout(function(){
                     target.click();
                 }, 400);
             }
+        }, false);
+    }
+}
+
+
+function modal(DATA){
+
+    var btn = document.querySelectorAll('[modal="btn"]');
+    for (var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function(e){
+            var m_id = e.currentTarget.getAttribute('m-id')
+            var modalBody = document.querySelector('[modal="target"]')
+            modalBody.innerHTML = DATA[m_id].iframe;
+
         }, false);
     }
 }
