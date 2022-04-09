@@ -97,6 +97,7 @@
 .nav{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     position: absolute;
     top: 70px;

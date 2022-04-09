@@ -1,8 +1,8 @@
 
 @import "variables";
-@import "basestyle";
-
 @import "fonts";
+
+@import "basestyle";
 
 @import "./components/header";
 @import "./components/footer";
@@ -22,6 +22,8 @@ body {
     background-image: url(./assets/image/background1.png);
     background-repeat: repeat-x;
     background-size: 74px;
+
+    
 
 }
 
@@ -47,7 +49,7 @@ section {
     padding: 0 1.2rem;
 }
 
-@media screen and (min-width: 1020px) { 
+@media screen and (min-width: 1024px) { 
     body {
         background-size: 180px;
 

@@ -8,11 +8,24 @@ $color5: #ff00ff;
 $color6: #ff0000;
 $color7: #0000ff;
 
-$min: minmax(240px, 1fr);
-
 @mixin flex($dir: row, $wrap: nowrap){
     display: flex;
     flex-direction: $dir;
     flex-wrap: $wrap;
 }
 
+@mixin respond($breakpoint) {
+    
+    @if($breakpoint == sm)  {
+      @media (min-width: 768px) { @content }
+    };
+    @if($breakpoint == md)  {
+      @media (min-width: 1024px) { @content }
+    };
+    @if($breakpoint == lg)  {
+      @media (min-width: 1280px) { @content }
+    };
+    @if($breakpoint == xl)  {
+      @media (min-width: 1440px) { @content }
+    }
+}

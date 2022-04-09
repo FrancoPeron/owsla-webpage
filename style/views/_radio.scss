@@ -14,14 +14,14 @@ $radio-grid: minmax(240px, 1fr);
         left: 0;
         z-index: -1;
         width: 100%;
-        height: 500px;
+        height: 600px;
         object-fit: cover;
         background-color: black;
         background: url(./assets/image/fondo3.jpg);
         background-size: cover;
         background-position: center;
-        filter: grayscale(1);
-       
+        clip-path: polygon(0% 0%, 100% 0%,100% 80%,0% 100%);
+        animation: move 160s infinite;
         
         &::after{
             content: "";
@@ -43,7 +43,8 @@ $radio-grid: minmax(240px, 1fr);
             position: relative;
             display: flex;
             flex-direction: column;
-            background-color: $cBlack;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(3rem);
             width: 100%;
     
             .main-radio__info{

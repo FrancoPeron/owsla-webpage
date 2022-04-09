@@ -157,10 +157,17 @@
             transition: 1s;
             position: relative;
             margin-top: 1rem;
+
+            @include respond(sm) {
+                width: 33.33333333%;
+            }
         }
         
         .active{
             width: 100%;
+            @include respond(sm) {
+                width: 33.33333333%;
+            }
         }
     
         .slider__link.active::after {
@@ -181,6 +188,10 @@
         .slider__link:hover, .active2 {
             background: $cBlack;
             width: 100%;
+
+            @include respond(sl) {
+                width: 40%;
+            }
         }
         
         @keyframes carousel-active-nav-item {
@@ -195,22 +206,6 @@
         }
     }
 }
-
-@media screen and (min-width: 768px) {
-
-    .slider{
-        .slider__nav {
-            .slider__link {
-                width: 33.33333333%;
-            }
-
-            .slider__link:hover, .active2 {
-                width: 40%;
-            }
-        }
-    }
-}
-
 /*#t=30*/
 
 
@@ -767,41 +762,30 @@
         max-width: 500px;
     }
 
-    .suscribe__form {
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 800px;
-        border: solid $cWhite 0px;
-        margin: 0 1rem;
     
-        .suscribe__email {
-            @extend .f-headline;
-            color: $cWhite;
-            
-            width: 100%;
-            min-height: 60px;
-            display: block;
-            border: solid $cWhite 2px;
-            background: transparent;
-            padding: .75rem 1.2rem .5rem;
+}
 
-            &::placeholder{
-                color: $cWhite;
-                opacity: .7;
-            }
-        }
-        
-        .suscribe__btn {
+.suscribe__form {
 
-            @extend .btn__outline2;
-            margin-top: 2rem;
+    @extend .formulario__form;
+    
 
-        
-        }
-        
+    .suscribe__email {
+        @extend .formulario__input;
+
     }
+    
+    .suscribe__btn {
+        @extend .formulario__btn;
+
+        @include respond(sm) {
+            border-left: 0;
+            margin: 0;
+        }
+
+    
+    }
+    
 }
 
 .suscribe-background{
@@ -814,27 +798,6 @@
     z-index: -1;
     background-repeat: no-repeat;
 }
-
-@media screen and (min-width: 768px) { 
-
-    .suscribe {
-    
-        .suscribe__form {
-    
-            flex-direction: row;
-            
-            .suscribe__btn {
-                
-                border-left: 0px;
-                margin: 0;
-            }
-            
-        }
-    }
-    
-
-}
-
 
 
 

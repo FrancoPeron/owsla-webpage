@@ -2,155 +2,215 @@
 
 /* ------------------------------ Contact ------------------------------ */
 
-
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.main-contact__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
-    max-width: 1400px;
-
-    .contact__suscribe {
-        @extend %contact_box1;
-
-        .contact__suscribe-box{
-            @extend %contact_box2;
-
-            .contact__suscribe-email{
-                @extend %contact_box3;
-            }
-
-            .contact__suscribe-btn{
-                @extend %contact_box4;
-            }
-        }
-
-    }
+    height: 180%;
+    object-fit: cover;
+    background: url(./assets/image/fondo5.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: move 160s infinite;
+    filter: hue-rotate(225deg);
     
-    .contact__demo {
-        @extend %contact_box1;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(black, transparent);
+    }
+}
+
+.main-contact{
+
+    .main-contact__title{
+        @extend .f-monument;
+        @extend .f-bt2;
+        font-weight: 500;
+        color:$cWhite;
         
-        .contact__demo-box{
-            @extend %contact_box2;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        white-space: nowrap;
 
-            .contact__demo-file{
-                @extend %contact_box3;
-
-                align-self: center;
-                position: relative;
-            
-                &::-webkit-file-upload-button {
-                    visibility: hidden;
-                }
-            
-                &::before {
-                    content: 'Select files';
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    position: absolute;
-                    top: -9px;
-                    font-size: 1.125rem;
-                    line-height: 1.4;
-                    font-weight: 700;
-                    color: black;
-                    display: inline-block;
-                    padding: 0.6rem;
-                    cursor: pointer;
-                
-                }
-            
-                &:hover::before {
-                    color: var(--color7);
-                }
-            
-                &:active::before {
-                    background: transparent
-                }
-            }
-
-            .contact__demo-btn{
-                @extend %contact_box4;
-            }
-        }
-    }
-    
-    .contact__description {
-        @extend %contact_box1;
-
-        .contact__description-box {
-            @extend %contact_box2;
-            flex-direction: column;
-
-            .contact__description-textarea {
-                @extend %contact_box3;
-                padding: 0.6rem;
-            }
-
-            .contact__description-btn {
-                @extend %contact_box4;
-            }
-
+        
+        &::before{
+            content: "-";
+            @extend .f-bt2;
+            color:$cWhite;
+            margin-right: 3rem;
         }
 
+        &::after{
+            content: "-";
+            @extend .f-bt2;
+            color:$cWhite;
+            margin-left: 3rem;
+        }
     }
-
 }
 
 
-
-%contact_box1{
+.contact_form{
     grid-column: span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: dashed;
-    padding: 1rem 1.5rem 1.5rem;
     margin-bottom: 2rem;
     width: 100%;
-    background: whitesmoke;
+
+    @include respond(md) {
+        grid-column: span 1;
+        
+    }
+
 }
 
-%contact_box2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background: $cWhite;
-    border: solid #000 2px;
-}
-
-%contact_box3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.4;
-    display: block;
-    width: 100%;
-    background: $cWhite;
-    padding: 0 .6rem;
-}
-
-%contact_box4{
-    font-family: Alien-League-2;
-    font-size: 1.625rem;
-    white-space: nowrap;
-    padding: 0 1.5rem;
-    height: 46px;
-    letter-spacing: 0.078rem;
-    background: var(--cBlack);
+.contact_title{
+    @extend .f-title2;
+    @extend .f-t2;
     color: $cWhite;
-    cursor: pointer;
+    margin: 2rem;
 }
 
 
+.contact{
+    @extend .container-full;
 
-@media screen and (min-width: 1024px) {
+    .contact__box{
 
-    .contact {
-        .contact__suscribe, .contact__demo{
-            grid-column: span 1;
+        display: grid;
+        grid-template-areas:    'suscribe'
+                                'demo'
+                                'description';
+
+        @include respond(md) {
+            border: solid 2px white;
+            backdrop-filter: blur(4px);
+
+            grid-template-areas:    'img suscribe'
+                                    'img demo'
+                                    'img description';
+            
+        }
+
+        .contact__img{
+            display: none;
+            grid-area: img;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-right: solid 2px white;
+
+            @include respond(md) {
+                display: flex;
+                
+            }
+        }
+
+        .contact__suscribe {
+            grid-area: suscribe;
+            @extend .contact_form;
+
+            @include respond(md) {
+                padding: 0 3rem;
+                
+            }
+
+            .contact__suscribe-title{
+                @extend .contact_title;
+            }
+
+            .contact__suscribe-box{
+                @extend .formulario__form;
+
+                .contact__suscribe-email{
+                    @extend .formulario__input;
+                }
+
+                .contact__suscribe-btn{
+                    @extend .formulario__btn;
+                    @include respond(sm) {
+                        border-left: 0;
+                        margin: 0;
+                        
+                    }
+                }
+            }
+
+        }
+        
+        .contact__demo {
+            grid-area: demo;
+            @extend .contact_form;
+
+            @include respond(md) {
+                padding: 1rem 3rem;
+                
+            }
+
+            .contact__demo-title{
+                @extend .contact_title;
+            }
+            
+            .contact__demo-box{
+                @extend .formulario__form;
+
+                .contact__demo-file{
+                    @extend .formulario__input-file;
+                }
+
+                .contact__demo-btn{
+                    @extend .formulario__btn;
+                    @include respond(sm) {
+                        border-left: 0;
+                        margin: 0;
+                        
+                    }
+                }
+            }
+        }
+        
+        .contact__description {
+            grid-area: description;
+            @extend .contact_form;
+
+            @include respond(md) {
+                padding: 1rem 3rem;
+                
+            }
+
+            .contact__description-title{
+                @extend .contact_title;
+            }
+            
+
+            .contact__description-box {
+                @extend .formulario__form;
+                flex-direction: column;
+
+                .contact__description-textarea {
+                    @extend .formulario__input-textarea;
+                }
+
+                .contact__description-btn {
+                    @extend .formulario__btn;
+                    @include respond(sm) {
+                        border-top: 0;
+                        margin: 0;
+                        
+                    }
+                }
+
+            }
+
         }
     }
 }
-
-
-
-
 
