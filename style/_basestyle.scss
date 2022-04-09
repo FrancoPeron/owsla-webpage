@@ -92,6 +92,7 @@ input[type="radio"] {
 
 button{
     background-color: transparent;
+    height: min-content;
 }
 
 
@@ -144,6 +145,13 @@ button{
             @extend .btn;
             @extend .btn__outline;
             background: rgba(255, 255, 255, 0.20);
+        }
+
+        &3{
+            @extend .btn;
+            @extend .btn__outline;
+            color: $cBlack;
+            border: solid 2px $cBlack;
         }
 
         &:hover{

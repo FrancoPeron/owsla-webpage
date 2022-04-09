@@ -77,6 +77,80 @@ $merch-grid: minmax(360px, 1fr);
         background-color: $cWhite;
         padding: 2rem 2rem 0 2rem;
         margin-bottom: 0;
+
+        .nav{
+            max-height: 100%;
+
+            
+            flex-direction: row;
+            position: relative;
+            top: 0;        
+            width: fit-content;
+            height: fit-content;
+            background-color: transparent;
+            max-height: 100%;
+            z-index: 1;
+            
+            &--column {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .nav__list{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: fit-content;
+                margin: 0;
+    
+                .nav__item{
+                    background-color: transparent;
+                    width: fit-content;
+        
+                    .nav__link--black{
+
+                            @extend .f-monument;
+                            position: relative;
+                            color: $cBlack;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            letter-spacing: .1rem;
+                            font-weight: 500;
+                            line-height: calc(150%);
+                            padding: 1rem 0;
+
+                            color:$cBlack;
+                            -webkit-text-stroke: 0;
+        
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                width: 100%;
+                                height: 2px;
+                                border-radius: 4px;
+                                transition: all .5s;
+                                background-color: transparent;
+                            }
+        
+                            @include respond(md) {
+
+                                &:hover::after{
+                                    background-color: $cBlack;
+                                }
+                                
+                            }
+    
+                        &::after{
+                            bottom: -8px;
+                        }
+                    }
+                }
+            
+        
+            }
+        }
     }
 
     .main-merch__list{
@@ -147,20 +221,67 @@ $merch-grid: minmax(360px, 1fr);
     
 }
 
+.bag{
+    width: 600px;
 
+    .bag__title{
+        @extend .f-title2;
+    }
+    
+    .bag__body{
+        display: flex;
+        flex-direction: column;
+    
+        .bag-product{
+            display: grid;
+            grid-template-areas:    'img title title'
+                                    'img price cant'
+                                    'img space space';
+            column-gap: 2rem;
+            row-gap: 1rem;
+            margin-bottom: 1rem;
+    
+            .bag-product__img{
+                grid-area: img;
+                width: clamp(100px, 30vw, 200px);
+                height: 190px;
+                object-fit: cover;
+            }
+            .bag-product__title{
+                grid-area: title;
+                @extend .f-headline;
+                margin: 1rem 0;
+            }
+            .bag-product__price{
+                grid-area: price;
+                align-self: center;
+                @extend .f-monument;
+                @extend .f-b1;
+                
+            }
+            .bag-product__cant{
+                grid-area: cant;
 
-.filter-carrito{
-    display: flex;
-    flex-direction: row;
+                button{
+                    font-weight: 500;
+                    height: 30px;
+                    width: 30px;
+                    padding: 0;
+                    padding-top: 0.1rem;
+                    padding-left: 0.2rem;
+                }
+                p{
+                    @extend .f-monument;
+                    @extend .f-body;
+                }
+            }
+        }
+    
+    }
+
+    .bag__total-price{
+        @extend .f-headline;
+    }
+
 }
 
-.merch__shortby-label {
-    font-size: 1.5rem;
-    letter-spacing: 0.009rem;
-    line-height: 150%;
-    margin-right: 1rem;
-}
-
-.merch__shortby-label~select{
-    padding: .5rem;
-}

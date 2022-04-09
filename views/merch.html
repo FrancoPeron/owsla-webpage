@@ -166,7 +166,7 @@
 
         </section>
 
-        <section class="main-merch__nav d-flex flex-row justify-content-between align-items-center">
+        <section class="main-merch__nav d-flex flex-row justify-content-between align-items-start">
 
 
             <nav class="nav">
@@ -196,7 +196,7 @@
             </nav>
 
             <button class="position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#bag" aria-controls="offcanvasRight"> 
-                <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <svg class="my-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
                     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                         <path d="M2387 5105 c-394 -75 -698 -360 -799 -750 -17 -66 -21 -121 -25 -312 l-5 -233 -567 0 -566 0 -213 -1592 c-117 -876 -213 -1614 -212 -1639 0 -66 35 -191 72 -262 42 -81 164 -203 245 -245 34 -18 96 -41 139 -52 76 -20 118 -20 2098 -20 2239 0 2092 -4 2236 66 187 92 327 313 330 519 1 22 -95 757 -212 1633 l-213 1592 -567 0 -568 0 0 194 c0 269 -24 396 -106 559 -133 265 -372 457 -659 528 -107 27 -304 34 -408 14z m317 -405 c113 -29 190 -73 276 -160 87 -86 131 -163 160 -276 16 -63 20 -111 20 -266 l0 -188 -600 0 -600 0 0 188 c0 214 14 295 72 405 42 81 164 203 245 245 133 70 286 88 427 52z m-1144 -1595 l0 -305 200 0 200 0 0 305 0 305 600 0 600 0 0 -305 0 -305 200 0 200 0 0 305 0 305 393 0 392 0 189 -1412 c211 -1580 201 -1463 126 -1538 -21 -21 -56 -43 -77 -49 -53 -15 -3993 -15 -4046 0 -21 6 -56 28 -77 49 -75 75 -85 -42 126 1538 l189 1412 392 0 393 0 0 -305z"/>
@@ -204,35 +204,50 @@
                 </svg>
                 <!-- <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span> -->
             </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="bag" aria-labelledby="offcanvasRightLabel">
+            
+            <div class="bag offcanvas offcanvas-end" tabindex="-1" id="bag" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h2 class="mb-0" id="offcanvasRightLabel">My Bag</h2>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    <h2 class="bag__title mb-0" id="offcanvasRightLabel">My Bag</h2>
+                    <button type="button" class="btn-close text-reset opacity-100" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="d-flex flex-row justify-content-between">
-                        <img class="offcanvas-img rounded me-5" src="../assets/image/product004.jpg" alt="">
-                        <div class="d-flex flex-column">
-                            <p class="merch__item-name mb-2">'FISHTAIL' CANVAS JACKET BLACK // UNISEX</p>
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <p class="merch__item-price mb-2">$ 165.00</p>
-                                <div class="d-flex flex-row">
-                                    <button type="button"
-                                        class=" merch__item-price btn btn-outline-dark btn-sm ">-</button>
-                                    <p class="merch__item-price mx-3">1</p>
-                                    <button type="button"
-                                        class=" merch__item-price btn btn-outline-dark btn-sm ">+</button>
-                                </div>
-                            </div>
+                <div class="bag__body offcanvas-body">
+
+                    <div class="bag-product">
+
+                        <img class="bag-product__img rounded" src="../assets/image/owslagoods/product01.jpg" alt="">
+                        
+                        <p class="bag-product__title mb-2">'FISHTAIL' CANVAS JACKET BLACK // UNISEX</p>
+                        
+                        <p class="bag-product__price mb-0">$ 165.00</p>
+                        <div class="bag-product__cant d-flex flex-row justify-content-end align-items-center">
+                            <button type="button" class="btn__outline3">-</button>
+                            <p class="mx-3">1</p>
+                            <button type="button" class="btn__outline3">+</button>
                         </div>
+                      
                     </div>
+
+                    <div class="bag-product">
+
+                        <img class="bag-product__img rounded" src="../assets/image/owslagoods/product03.jpg" alt="">
+                        
+                        <p class="bag-product__title mb-2">SPECTRUM HOODIE // UNISEX</p>
+                        
+                        <p class="bag-product__price mb-0">$ 95.00</p>
+                        <div class="bag-product__cant d-flex flex-row justify-content-end align-items-center">
+                            <button type="button" class="btn__outline3">-</button>
+                            <p class="mx-3">1</p>
+                            <button type="button" class="btn__outline3">+</button>
+                        </div>
+                      
+                    </div>
+
+                    
                 </div>
                 <div class="d-flex flex-row justify-content-between align-items-center border-top border-dark p-3">
-                    <p class="h3 mb-0">Total price: $ 165.00</p>
-                    <button class="merch__item-price btn btn-outline-dark" data-bs-toggle="offcanvas"
-                        data-bs-target="#bag">checkout</button>
+                    <p class="bag__total-price mb-0">Total price: $ 260.00</p>
+                    <button class="btn__secondary" data-bs-toggle="offcanvas" data-bs-target="#bag">checkout</button>
                 </div>
             </div>
 
@@ -351,33 +366,34 @@
     const PRODUCTS = {
         1: {
             img: "../assets/image/owslagoods/product01.jpg",
-            name: "'FISHTAIL' CANVAS JACKET BLACK // UNISEX",
-            price: "$ 165.00",
+            name: "LONG CLOTHING x OWSLA MA1 BOMBER JACKET // UNISEX",
+            price: "$ 210.00",
+            category: "jackets"
         },
         2: {
             img: "../assets/image/owslagoods/product02.jpg",
-            name: "",
-            price: "",
+            name: "'FISHTAIL' CANVAS JACKET BLACK // UNISEX",
+            price: "$ 165.00",
         },
         3: {
             img: "../assets/image/owslagoods/product03.jpg",
-            name: "",
-            price: "",
+            name: "SPECTRUM HOODIE // UNISEX",
+            price: "$ 95.00",
         },
         4: {
             img: "../assets/image/owslagoods/product04.png",
-            name: "",
-            price: "",
+            name: "GARMENT DYE OWSLA HOODIE APRICOT // UNISEX",
+            price: "$ 95.00",
         },
         5: {
             img: "../assets/image/owslagoods/product05.jpg",
-            name: "",
-            price: "",
+            name: "GARMENT DYE OWSLA HOODIE PINK // UNISEX",
+            price: "$ 95.00",
         },
         6: {
             img: "../assets/image/owslagoods/product06.jpg",
-            name: "",
-            price: "",
+            name: "'OWSLA FLOCK LOGO' CLASSIC HOODIE BLACK // UNISEX",
+            price: "$ 82.00",
         }
     }
     function merchItem(val){

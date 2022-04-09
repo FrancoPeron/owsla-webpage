@@ -17,13 +17,13 @@
   font-weight: 700;
   src: url("./assets/fonts/MonumentExtended-Black.otf") format("opentype"); }
 
-.f-montserrat, .f-subtitle, .new-music .new-music__subtitle, .radio .radio__subtitle, .f-subtitle2, .suscribe .suscribe__subtitle, .f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description {
+.f-montserrat, .f-subtitle, .new-music .new-music__subtitle, .radio .radio__subtitle, .f-subtitle2, .suscribe .suscribe__subtitle, .f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description, .bag .bag__body .bag-product .bag-product__cant p {
   font-family: 'Montserrat', sans-serif; }
 
-.f-monument, .f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title, .radio .radio__title, .f-title2, .suscribe .suscribe__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title, .f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name, .btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn, .nav .nav__list .nav__item .nav__link, .nav .nav__list .nav__item .nav__link--black, .slider .slider__videos .slider__box-video .slider__box-info .slider__title, .radio .radio__list .radio__item .radio__num, .main-music .main-music__title, .main-artists .main-artists__title, .artist .artist__name, .modal-title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__title, .main-video .main-video__title, .video-item .video-item__title, .main-merch .main-merch__banner .main-merch__title, .product .product__item-price, .main-contact .main-contact__title {
+.f-monument, .f-title, .new-music .new-music__title, .our-artists .our-artists__box .our-artists__title, .playlists .playlists__title, .radio .radio__title, .f-title2, .suscribe .suscribe__title, .bag .bag__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title, .f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name, .bag .bag__body .bag-product .bag-product__title, .bag .bag__total-price, .btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .btn__outline3, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn, .nav .nav__list .nav__item .nav__link, .slider .slider__videos .slider__box-video .slider__box-info .slider__title, .radio .radio__list .radio__item .radio__num, .main-music .main-music__title, .main-artists .main-artists__title, .artist .artist__name, .modal-title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__title, .main-video .main-video__title, .video-item .video-item__title, .main-merch .main-merch__banner .main-merch__title, .main-merch .main-merch__nav .nav .nav__list .nav__item .nav__link--black, .product .product__item-price, .bag .bag__body .bag-product .bag-product__price, .bag .bag__body .bag-product .bag-product__cant p, .main-about .main-about__title, .main-contact .main-contact__title {
   font-family: "MonumentExtended", Helvetica, Roboto, Arial, sans-serif; }
 
-.f-bt2, .main-music .main-music__title, .main-music .main-music__title::before, .main-music .main-music__title::after, .main-artists .main-artists__title, .main-artists .main-artists__title::before, .main-artists .main-artists__title::after, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__title, .main-video .main-video__title, .main-video .main-video__title::before, .main-video .main-video__title::after, .main-merch .main-merch__banner .main-merch__title, .main-merch .main-merch__banner .main-merch__title::before, .main-merch .main-merch__banner .main-merch__title::after, .main-contact .main-contact__title, .main-contact .main-contact__title::before, .main-contact .main-contact__title::after {
+.f-bt2, .main-music .main-music__title, .main-music .main-music__title::before, .main-music .main-music__title::after, .main-artists .main-artists__title, .main-artists .main-artists__title::before, .main-artists .main-artists__title::after, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__title, .main-video .main-video__title, .main-video .main-video__title::before, .main-video .main-video__title::after, .main-merch .main-merch__banner .main-merch__title, .main-merch .main-merch__banner .main-merch__title::before, .main-merch .main-merch__banner .main-merch__title::after, .main-about .main-about__title, .main-about .main-about__title::before, .main-about .main-about__title::after, .main-contact .main-contact__title, .main-contact .main-contact__title::before, .main-contact .main-contact__title::after {
   font-size: clamp(2.8rem, 5vw, 4rem);
   /* 94px */ }
 
@@ -35,7 +35,7 @@
   font-size: clamp(1.825rem, 5vw, 2.625rem);
   /* 42px */ }
 
-.f-t1, .f-title2, .suscribe .suscribe__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title, .slider .slider__videos .slider__box-video .slider__box-info .slider__title .slider__title--outline {
+.f-t1, .f-title2, .suscribe .suscribe__title, .bag .bag__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title, .slider .slider__videos .slider__box-video .slider__box-info .slider__title .slider__title--outline {
   font-size: clamp(1.5rem, 4vw, 2rem);
   /* 32px */ }
 
@@ -43,15 +43,15 @@
   font-size: clamp(1.225rem, 4vw, 1.5rem);
   /* 24px */ }
 
-.f-hl1, .f-subtitle2, .suscribe .suscribe__subtitle, .slider .slider__videos .slider__box-video .slider__box-info .slider__title .slider__subtitle, .artist .artist__name, .video-item .video-item__title {
+.f-hl1, .f-subtitle2, .suscribe .suscribe__subtitle, .slider .slider__videos .slider__box-video .slider__box-info .slider__title .slider__subtitle, .artist .artist__name, .video-item .video-item__title, .main-about .about__description {
   font-size: clamp(1rem, 3.75vw, 1.3125rem);
   /* 21px */ }
 
-.f-hl2, .f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name {
+.f-hl2, .f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name, .bag .bag__body .bag-product .bag-product__title, .bag .bag__total-price {
   font-size: clamp(1rem, 3.75vw, 1.125rem);
   /* 18px */ }
 
-.f-b1, .f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description, .btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn, .product .product__item-price {
+.f-b1, .f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description, .bag .bag__body .bag-product .bag-product__cant p, .btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .btn__outline3, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn, .product .product__item-price, .bag .bag__body .bag-product .bag-product__price {
   font-size: 1rem;
   /* 16px */ }
 
@@ -75,7 +75,7 @@
   margin-bottom: 3rem;
   text-align: center; }
 
-.f-title2, .suscribe .suscribe__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title {
+.f-title2, .suscribe .suscribe__title, .bag .bag__title, .contact_title, .contact .contact__box .contact__suscribe .contact__suscribe-title, .contact .contact__box .contact__demo .contact__demo-title, .contact .contact__box .contact__description .contact__description-title {
   line-height: calc(120%);
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -89,18 +89,17 @@
   color: #1c1c1c;
   text-align: center; }
 
-.f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name {
+.f-headline, .formulario__form .formulario__input, .suscribe__form .formulario__input, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input, .contact .contact__box .contact__demo .contact__demo-box .formulario__input, .contact .contact__box .contact__description .contact__description-box .formulario__input, .formulario__form .formulario__input-file, .suscribe__form .formulario__input-file, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-file, .contact .contact__box .contact__description .contact__description-box .formulario__input-file, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-file, .formulario__form .formulario__input-textarea, .suscribe__form .formulario__input-textarea, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__input-textarea, .contact .contact__box .contact__demo .contact__demo-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .formulario__input-textarea, .contact .contact__box .contact__description .contact__description-box .contact__description-textarea, .suscribe__form .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__email, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__email, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__email, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__email, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-email, .footer .footer__copyright, .release .release__info .release__title, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__subtitle, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__subtitle, .main-merch .main-merch__banner .main-merch__subtitle, .product .product__item-name, .bag .bag__body .bag-product .bag-product__title, .bag .bag__total-price {
   line-height: calc(140%);
   font-weight: 500;
   letter-spacing: 0.05rem;
   color: #000000; }
 
-.f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description {
+.f-body, .release .release__info .release__artist, .main-radio .main-radio__list .main-radio__item .main-radio__name .main-radio__description, .bag .bag__body .bag-product .bag-product__cant p {
   line-height: calc(140%);
   font-weight: 500;
   letter-spacing: 0.1rem;
-  color: #000000;
-  text-align: center; }
+  color: #000000; }
 
 /* 
 .newmusic__album-title,
@@ -216,7 +215,8 @@ input[type="radio"] {
   display: none; }
 
 button {
-  background-color: transparent; }
+  background-color: transparent;
+  height: min-content; }
 
 .c-c1 {
   color: #cbcbcb; }
@@ -242,7 +242,7 @@ button {
 .shadow, .artist .artist__img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
-.btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn {
+.btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .btn__outline3, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn {
   line-height: calc(150%);
   letter-spacing: 0.2rem;
   font-weight: 300;
@@ -259,13 +259,16 @@ button {
   .btn__secondary, .product .product__btn {
     color: #ffffff;
     background: #000000; }
-  .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn {
+  .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .btn__outline3, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn {
     color: #ffffff;
     border: solid 2px #ffffff;
     background: transparent; }
     .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn {
       background: rgba(255, 255, 255, 0.2); }
-    .btn__outline:hover, .btn__outline2:hover, .formulario__form .formulario__btn:hover, .suscribe__form .formulario__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn:hover, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn:hover, .contact .contact__box .contact__description .contact__description-box .formulario__btn:hover, .suscribe__form .suscribe__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn:hover, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn:hover, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn:hover, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn:hover, .contact .contact__box .contact__description .contact__description-box .contact__description-btn:hover, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn:hover, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn:hover {
+    .btn__outline3 {
+      color: #000000;
+      border: solid 2px #000000; }
+    .btn__outline:hover, .btn__outline2:hover, .formulario__form .formulario__btn:hover, .suscribe__form .formulario__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn:hover, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn:hover, .contact .contact__box .contact__description .contact__description-box .formulario__btn:hover, .suscribe__form .suscribe__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn:hover, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn:hover, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn:hover, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn:hover, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn:hover, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn:hover, .contact .contact__box .contact__description .contact__description-box .contact__description-btn:hover, .btn__outline3:hover, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn:hover, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn:hover {
       background: #ffffff;
       color: #000000;
       transition: ease-in-out .5s;
@@ -411,7 +414,7 @@ button {
     margin: 1rem 0; }
     .nav .nav__list .nav__item {
       display: flex;
-      width: auto;
+      width: 100%;
       margin: -1px 1rem; }
       .nav .nav__list .nav__item .nav__link {
         position: relative;
@@ -433,28 +436,9 @@ button {
           height: 4px;
           border-radius: 5px;
           transition: all .5s; }
-        .nav .nav__list .nav__item .nav__link--black {
-          position: relative;
-          color: #000000;
-          font-size: 1rem;
-          text-transform: uppercase;
-          letter-spacing: .1rem;
-          font-weight: 500;
-          line-height: calc(150%);
-          color: #000000;
-          -webkit-text-stroke: 0; }
-          .nav .nav__list .nav__item .nav__link--black::after {
-            content: "";
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            border-radius: 4px;
-            transition: all .5s;
-            background-color: transparent; }
-          .nav .nav__list .nav__item .nav__link--black:hover::after {
-            background-color: #000000; }
+      @media (min-width: 1024px) {
+        .nav .nav__list .nav__item {
+          width: auto; } }
 
 .nav__item:nth-child(1),
 .nav__item:nth-child(1).nav__item--active .nav__link::after,
@@ -610,7 +594,8 @@ button {
   .footer .footer__copyright {
     color: #ffffff;
     margin-top: 2rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-align: center; }
 
 @media screen and (min-width: 1024px) {
   .footer .nav .nav__list {
@@ -639,7 +624,7 @@ section {
   padding: 0 1.2rem;
   justify-self: center; }
 
-.container-full, .main-music .main-music__list, .main-artists .main-artists__list, .main-radio .main-radio__banner, .main-radio .main-radio__list, .main-video .main-video__list, .main-merch .main-merch__banner, .main-merch .main-merch__nav, .main-merch .main-merch__list, .contact {
+.container-full, .main-music .main-music__list, .main-artists .main-artists__list, .main-radio .main-radio__banner, .main-radio .main-radio__list, .main-video .main-video__list, .main-merch .main-merch__banner, .main-merch .main-merch__nav, .main-merch .main-merch__list, .main-about .main-about__article, .contact {
   width: 100%;
   padding: 0 1.2rem; }
 
@@ -652,7 +637,7 @@ section {
     padding: 0 2rem; } }
 
 @media screen and (min-width: 1440px) {
-  .container-full, .main-music .main-music__list, .main-artists .main-artists__list, .main-radio .main-radio__banner, .main-radio .main-radio__list, .main-video .main-video__list, .main-merch .main-merch__banner, .main-merch .main-merch__nav, .main-merch .main-merch__list, .contact {
+  .container-full, .main-music .main-music__list, .main-artists .main-artists__list, .main-radio .main-radio__banner, .main-radio .main-radio__list, .main-video .main-video__list, .main-merch .main-merch__banner, .main-merch .main-merch__nav, .main-merch .main-merch__list, .main-about .main-about__article, .contact {
     width: 80%;
     min-width: 1440px; } }
 
@@ -674,12 +659,6 @@ section {
   width: 100%; }
 
 /* ------------------------------------------------------------------- */
-.about__article, .artists__artists {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap; }
-
 .main-music,
 .main-artists,
 .main-radio,
@@ -1692,6 +1671,54 @@ section {
   background-color: #ffffff;
   padding: 2rem 2rem 0 2rem;
   margin-bottom: 0; }
+  .main-merch .main-merch__nav .nav {
+    max-height: 100%;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    max-height: 100%;
+    z-index: 1; }
+    .main-merch .main-merch__nav .nav--column {
+      flex-direction: column;
+      align-items: flex-start; }
+    .main-merch .main-merch__nav .nav .nav__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: fit-content;
+      margin: 0; }
+      .main-merch .main-merch__nav .nav .nav__list .nav__item {
+        background-color: transparent;
+        width: fit-content; }
+        .main-merch .main-merch__nav .nav .nav__list .nav__item .nav__link--black {
+          position: relative;
+          color: #000000;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+          font-weight: 500;
+          line-height: calc(150%);
+          padding: 1rem 0;
+          color: #000000;
+          -webkit-text-stroke: 0; }
+          .main-merch .main-merch__nav .nav .nav__list .nav__item .nav__link--black::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 4px;
+            transition: all .5s;
+            background-color: transparent; }
+          @media (min-width: 1024px) {
+            .main-merch .main-merch__nav .nav .nav__list .nav__item .nav__link--black:hover::after {
+              background-color: #000000; } }
+          .main-merch .main-merch__nav .nav .nav__list .nav__item .nav__link--black::after {
+            bottom: -8px; }
 
 .main-merch .main-merch__list {
   background: #ffffff;
@@ -1735,56 +1762,114 @@ section {
     transform: scale(1.2) translate(0, 30px);
     transition: ease-in-out .45s; }
 
-.filter-carrito {
-  display: flex;
-  flex-direction: row; }
-
-.merch__shortby-label {
-  font-size: 1.5rem;
-  letter-spacing: 0.009rem;
-  line-height: 150%;
-  margin-right: 1rem; }
-
-.merch__shortby-label ~ select {
-  padding: .5rem; }
+.bag {
+  width: 600px; }
+  .bag .bag__body {
+    display: flex;
+    flex-direction: column; }
+    .bag .bag__body .bag-product {
+      display: grid;
+      grid-template-areas: 'img title title' 'img price cant' 'img space space';
+      column-gap: 2rem;
+      row-gap: 1rem;
+      margin-bottom: 1rem; }
+      .bag .bag__body .bag-product .bag-product__img {
+        grid-area: img;
+        width: clamp(100px, 30vw, 200px);
+        height: 190px;
+        object-fit: cover; }
+      .bag .bag__body .bag-product .bag-product__title {
+        grid-area: title;
+        margin: 1rem 0; }
+      .bag .bag__body .bag-product .bag-product__price {
+        grid-area: price;
+        align-self: center; }
+      .bag .bag__body .bag-product .bag-product__cant {
+        grid-area: cant; }
+        .bag .bag__body .bag-product .bag-product__cant button {
+          font-weight: 500;
+          height: 30px;
+          width: 30px;
+          padding: 0;
+          padding-top: 0.1rem;
+          padding-left: 0.2rem; }
 
 /* ------------------------------ About ------------------------------ */
-.carousel-inner {
-  max-width: 1400px;
-  height: 800px; }
-
-.about__img {
-  width: 100vw;
-  max-width: 1400px;
-  object-fit: cover; }
-
-.about__description {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  max-width: 1400px;
-  font-size: 1.375rem;
-  /* 24px */
-  letter-spacing: 0;
-  /* 0 */
-  margin: 0 1rem 1rem 1rem; }
-
 .main-about .main-about__background {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: cover;
-  background: url(https://owsla.com/wp-content/uploads/2017/05/DSC09523-1024x684.jpg);
+  background: url(https://images.unsplash.com/photo-1634855105161-2f328c473638?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  animation: move 160s infinite; }
   .main-about .main-about__background::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(black, transparent); }
+
+.main-about .main-about__title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  .main-about .main-about__title::before {
+    content: "-";
+    color: #ffffff;
+    margin-right: 3rem; }
+  .main-about .main-about__title::after {
+    content: "-";
+    color: #ffffff;
+    margin-left: 3rem; }
+
+.main-about .main-about__article {
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+
+.main-about .carousel {
+  grid-column: span 2;
+  max-height: 700px; }
+  .main-about .carousel .carousel-inner {
+    height: 100%; }
+    .main-about .carousel .carousel-inner .carousel-item {
+      height: 100%;
+      /*  &:nth-child(1) .about__img{
+                    filter: hue-rotate(110deg);
+                    opacity: 0.8;
+                } */ }
+      .main-about .carousel .carousel-inner .carousel-item .about__img {
+        width: 100%;
+        object-fit: cover;
+        min-height: 650px;
+        height: 100%; }
+  @media (min-width: 1024px) {
+    .main-about .carousel {
+      grid-column: span 1;
+      grid-row: span 2; } }
+
+.main-about .about__description {
+  grid-column: span 2;
+  width: 100%;
+  color: #ffffff;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3rem);
+  padding: 2rem; }
+  @media (min-width: 1024px) {
+    .main-about .about__description {
+      grid-column: span 1; }
+      .main-about .about__description:nth-child(4) {
+        grid-column: span 2; } }
 
 /* ------------------------------ Contact ------------------------------ */
 .main-contact__background {
@@ -1793,7 +1878,7 @@ section {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 180%;
+  height: 100%;
   object-fit: cover;
   background: url(./assets/image/fondo5.jpg);
   background-size: cover;
