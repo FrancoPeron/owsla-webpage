@@ -8,16 +8,11 @@ $music-grid: minmax(240px, 1fr);
 .main-music{
 
     .main-music__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        background: url(./assets/image/fondo1.jpg);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-music.webp);
         background-size: cover;
         background-position: center;
+        height: 600px;
         animation: multcolor 30s infinite, move 160s infinite;
        
         

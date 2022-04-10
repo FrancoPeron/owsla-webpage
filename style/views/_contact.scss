@@ -3,14 +3,9 @@
 /* ------------------------------ Contact ------------------------------ */
 
 .main-contact__background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
+    @extend .backgrounds-pos;
     height: 100%;
-    object-fit: cover;
-    background: url(./assets/image/fondo5.jpg);
+    background: url(./assets/image/background/main-contact.webp);
     background-size: cover;
     background-position: center;
     animation: move 160s infinite;

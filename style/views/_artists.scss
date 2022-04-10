@@ -10,17 +10,12 @@ $artists-grid: minmax(330px, 1fr);
 .main-artists{
 
     .main-artists__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        background: url(./assets/image/fondo2.jpg);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-artists.webp);
         background-size: cover;
         background-position: center;
         clip-path: polygon(0% 0%, 100% 0%,100% 80%,0% 100%);
+        height: 600px;
         animation: move 160s infinite;
         
         &::after{

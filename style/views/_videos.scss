@@ -10,16 +10,11 @@ $video-grid: minmax(48%, 1fr);
 .main-video{
 
     .main-video__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        background: url(https://owsla.com/wp-content/uploads/2017/08/6.gif);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-video.gif);
         background-size: cover;
         background-position: center;
+        height: 600px;
         animation: multcolor 30s infinite, move 160s infinite;
         
         &::after{

@@ -6,16 +6,11 @@
 .main-about{
 
     .main-about__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        background: url(https://images.unsplash.com/photo-1634855105161-2f328c473638?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-about.webp);
         background-size: cover;
         background-position: center;
+        height: 100%;
         animation: move 160s infinite;
         
         &::after{

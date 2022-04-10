@@ -8,16 +8,11 @@ $merch-grid: minmax(360px, 1fr);
 .main-merch{
 
     .main-merch__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 800px;
-        object-fit: cover;
-        background: url(https://owsla.com/wp-content/uploads/2017/05/DSC09523-1024x684.jpg);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-merch.webp);
         background-size: cover;
         background-position: center;
+        height: 800px;
         
         &::after{
             content: "";
@@ -43,8 +38,8 @@ $merch-grid: minmax(360px, 1fr);
             -webkit-text-stroke: 1.5px #ffffff;
             text-align: center;
             
-            margin-bottom: 2rem;
-            margin-top: 3rem;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
     
             &::before{
                 content: "-";
@@ -64,8 +59,12 @@ $merch-grid: minmax(360px, 1fr);
         .main-merch__subtitle{
             @extend .f-headline;
             text-align: center;
-            max-width: 600px;
+            max-width: 700px;
             color: $cWhite;
+            border: solid 2px $cWhite;
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(2.5px);
+            padding: 2rem 3rem;
 
             margin-bottom: 5rem
         }

@@ -14,26 +14,13 @@
         margin-top: .5rem;
 
     .main-index__background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        background: url(./assets/image/main-index.jpg);
+        @extend .backgrounds-pos;
+        background: url(./assets/image/background/main-index.webp);
         background-size: cover;
         background-position: center;
+        height: 600px;
         animation: multcolor 30s infinite, move 160s infinite;
         
-        
-        &::after{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(black, transparent);
-        }
     }
 }
 
@@ -245,6 +232,11 @@
         grid-column: span 6;
         justify-self: center;
         max-width: 800px;
+        a:hover{
+            color: $cBlack;
+            text-decoration: underline;
+        }
+        
     }
 
     .new-music__album{
@@ -294,7 +286,7 @@
 
 .new-music-background{
     grid-area: new-music;
-    background-image: url(./assets/image/fondo1.jpg);
+    background-image: url(./assets/image/background/newmusic.webp);
     background-size: cover;
     background-position: top;
     filter: brightness(0.5);
@@ -558,7 +550,7 @@
 
 .playlists-background{
     grid-area: playlists;
-    background-image: url(./assets/image/fondo7.jpg);
+    background-image:  url(./assets/image/background/playlist.webp);
     background-size: cover;
     background-position: center;
     filter: brightness(0.5) hue-rotate(110deg);
@@ -806,7 +798,7 @@
 
 .suscribe-background{
     grid-area: suscribe;
-    background-image: url(./assets/image/suscribe.jpg);
+    background-image: url(./assets/image/background/suscribe.webp);
     background-size: cover;
     filter: brightness(0.7) saturate(1.8);
     background-position: bottom;
