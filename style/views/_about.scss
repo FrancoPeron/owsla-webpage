@@ -72,15 +72,20 @@
                 .about__img{
                     width: 100%;
                     object-fit: cover;
-                    min-height: 770px;
+                    min-height: 500px;
                     height: 100%;
                     
                 }
-               /*  &:nth-child(1) .about__img{
-                    filter: hue-rotate(110deg);
-                    opacity: 0.8;
-                } */
+                
+                @include respond(sm){
+                    .about__img{
+                        min-height: 770px;
+                        
+                    }
+                    
+                }
             }
+
         }
 
         @include respond(md) {

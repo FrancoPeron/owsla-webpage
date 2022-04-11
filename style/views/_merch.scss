@@ -38,21 +38,34 @@ $merch-grid: minmax(360px, 1fr);
             -webkit-text-stroke: 1.5px #ffffff;
             text-align: center;
             
-            margin-bottom: 3rem;
             margin-top: 2rem;
+            margin-bottom: 3rem;
     
             &::before{
                 content: "-";
-                
+                display: none;
                 @extend .f-bt2;
                 margin-right: 3rem;
             }
     
             &::after{
                 content: "-";
-                
+                display: none;
                 @extend .f-bt2;
                 margin-left: 3rem;
+            }
+            @include respond(sm){
+                &::before{
+                   
+                    display: initial;
+                    
+                }
+        
+                &::after{
+                   
+                    display: initial;
+                }
+                
             }
         }
 

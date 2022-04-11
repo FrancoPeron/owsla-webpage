@@ -1,4 +1,25 @@
 
+function print(DATA){
+
+    var items = document.querySelectorAll(".m-btn");
+    console.log(items)
+    for (var i = 0; i < items.length; i++) {
+    
+        items[i].addEventListener("click", function(e){
+            var target =  e.currentTarget;
+            var m_id = target.getAttribute('m-id')
+            var offcanvasBody = reproductor.querySelector('.target')
+            offcanvasBody.innerHTML = DATA[m_id];
+            if(!show){
+            setTimeout(function(){
+                    target.click();
+                }, 400);
+            }
+        }, false);
+    }
+}
+
+
 function offcanvas(DATA){
 
     var items = document.querySelectorAll(".m-btn");
