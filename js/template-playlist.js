@@ -1,7 +1,7 @@
 const PLAYLIST = {
-    1: '<iframe class="playlists__iframe" src="https://open.spotify.com/embed/playlist/3GGnJRZnzkiie2izVuUxN0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>',
-    2: '<iframe width="100%" height="180" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FCreateRadio%2Fowsla-radio-2-beats-1%2F" frameborder="0" ></iframe>',
-    3: '<iframe width="100%" height="180" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FPAUL_DI%2Fskrillex-owsla-radio-3-beats-1%2F" frameborder="0" ></iframe>'
+    1: 'https://open.spotify.com/embed/playlist/53PL6ta1G0KUC1wHiX7ABx?utm_source=generator&theme=0',
+    2: 'https://open.spotify.com/embed/playlist/6pqF6xEMaLBXHdUPKlXZwd?utm_source=generator',
+    3: 'https://open.spotify.com/embed/playlist/3GGnJRZnzkiie2izVuUxN0?utm_source=generator'
 }
 print(PLAYLIST);
 

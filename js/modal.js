@@ -8,13 +8,9 @@ function print(DATA){
         items[i].addEventListener("click", function(e){
             var target =  e.currentTarget;
             var m_id = target.getAttribute('m-id')
-            var offcanvasBody = reproductor.querySelector('.target')
-            offcanvasBody.innerHTML = DATA[m_id];
-            if(!show){
-            setTimeout(function(){
-                    target.click();
-                }, 400);
-            }
+            var body = document.querySelector('.target')
+            body.src = DATA[m_id];
+           
         }, false);
     }
 }
