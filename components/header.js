@@ -40,7 +40,7 @@ class Header extends HTMLElement {
                         <a class="nav__link" href="/views/radio.html">Radio</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/views/merch.html">Merch</a>
+                        <a class="nav__link" href="https://owslagoods.netlify.app/">Merch</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="/views/about.html">About</a>

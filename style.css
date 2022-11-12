@@ -636,7 +636,7 @@ section {
   margin-bottom: 6rem; }
 
 .container-center, .banner, .new-music, .our-artists, .playlists, .radio, .suscribe {
-  max-width: calc(1500px + 2rem);
+  max-width: calc(1300px + 2rem);
   padding: 0 1.2rem;
   justify-self: center; }
 
