@@ -5,7 +5,7 @@
 /* ------------------------------ Artists ------------------------------ */
 
 
-$artists-grid: minmax(330px, 1fr);
+$artists-grid: minmax(300px, 1fr);
 
 .main-artists{
 
@@ -89,11 +89,11 @@ $artists-grid: minmax(330px, 1fr);
     scroll-snap-align: start;
 
     .artist__img {
-        width: 320px;
-        height: 450px;
+        width: 300px;
+        height: 400px;
         object-fit: cover;
         cursor: pointer;
-        @extend .shadow;
+        // @extend .shadow;
     }
 
     .artist__name{
@@ -113,7 +113,7 @@ $artists-grid: minmax(330px, 1fr);
         right: 0;
         opacity: 0;
         background-color: #000;
-        height: 450px;
+        height: 400px;
         padding: .5rem 0;
         transition: all ease-in-out .5s;
         max-width: 0;

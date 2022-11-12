@@ -239,7 +239,7 @@ button {
 .c-c7 {
   color: #0000ff; }
 
-.shadow, .artist .artist__img {
+.shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .btn, .btn__primary, .new-music .new-music__album .new-music_link::after, .btn__secondary, .product .product__btn, .btn__outline, .btn__outline2, .formulario__form .formulario__btn, .suscribe__form .formulario__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .formulario__btn, .contact .contact__box .contact__demo .contact__demo-box .formulario__btn, .contact .contact__box .contact__description .contact__description-box .formulario__btn, .suscribe__form .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__suscribe .contact__suscribe-box .suscribe__btn, .contact .contact__box .contact__demo .contact__demo-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__demo .contact__demo-box .suscribe__btn, .contact .contact__box .contact__description .contact__description-box .suscribe__form .suscribe__btn, .suscribe__form .contact .contact__box .contact__description .contact__description-box .suscribe__btn, .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn, .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn, .contact .contact__box .contact__description .contact__description-box .contact__description-btn, .btn__outline3, .slider .slider__videos .slider__box-video .slider__box-info .slider__btn, .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__btn {
@@ -1354,14 +1354,14 @@ section {
   background: #ffffff;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem; }
 
 .artist {
   scroll-snap-align: start; }
   .artist .artist__img {
-    width: 320px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
     cursor: pointer; }
   .artist .artist__name {
@@ -1377,7 +1377,7 @@ section {
     right: 0;
     opacity: 0;
     background-color: #000;
-    height: 450px;
+    height: 400px;
     padding: .5rem 0;
     transition: all ease-in-out .5s;
     max-width: 0; }
