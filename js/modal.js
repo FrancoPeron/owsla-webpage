@@ -10,7 +10,7 @@ function print(DATA){
             var m_id = target.getAttribute('m-id')
             var body = document.querySelector('.target')
             body.src = DATA[m_id];
-           
+            
         }, false);
     }
 }
