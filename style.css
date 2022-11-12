@@ -1414,8 +1414,7 @@ section {
 .main-radio .main-radio__banner {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
-  margin-top: clamp(1.2rem, 2vw, 3rem); }
+  margin-bottom: 0; }
   .main-radio .main-radio__banner .main-radio__precentation {
     position: relative;
     display: flex;
@@ -1437,7 +1436,6 @@ section {
         line-height: 1.6;
         text-align: start;
         color: #ffffff;
-        margin-bottom: 3rem;
         font-weight: 300; }
       .main-radio .main-radio__banner .main-radio__precentation .main-radio__info .main-radio__line {
         height: 2px !important;
@@ -1903,7 +1901,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
   width: 100%; }
   @media (min-width: 1024px) {
     .contact_form, .contact .contact__box .contact__suscribe, .contact .contact__box .contact__demo, .contact .contact__box .contact__description {
@@ -1935,7 +1932,7 @@ section {
     grid-area: suscribe; }
     @media (min-width: 1024px) {
       .contact .contact__box .contact__suscribe {
-        padding: 0 3rem; } }
+        padding: 2rem 3rem; } }
     @media (min-width: 768px) {
       .contact .contact__box .contact__suscribe .contact__suscribe-box .contact__suscribe-btn {
         border-left: 0;
@@ -1944,16 +1941,17 @@ section {
     grid-area: demo; }
     @media (min-width: 1024px) {
       .contact .contact__box .contact__demo {
-        padding: 1rem 3rem; } }
+        padding: 2rem 3rem; } }
     @media (min-width: 768px) {
       .contact .contact__box .contact__demo .contact__demo-box .contact__demo-btn {
         border-left: 0;
         margin: 0; } }
   .contact .contact__box .contact__description {
-    grid-area: description; }
+    grid-area: description;
+    margin-bottom: 1rem; }
     @media (min-width: 1024px) {
       .contact .contact__box .contact__description {
-        padding: 1rem 3rem; } }
+        padding: 2rem 3rem; } }
     .contact .contact__box .contact__description .contact__description-box {
       flex-direction: column; }
       @media (min-width: 768px) {

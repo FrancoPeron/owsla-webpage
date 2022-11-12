@@ -57,7 +57,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
     width: 100%;
 
     @include respond(md) {
@@ -114,7 +113,7 @@
             @extend .contact_form;
 
             @include respond(md) {
-                padding: 0 3rem;
+                padding: 2rem 3rem;
                 
             }
 
@@ -146,7 +145,7 @@
             @extend .contact_form;
 
             @include respond(md) {
-                padding: 1rem 3rem;
+                padding: 2rem 3rem;
                 
             }
 
@@ -174,10 +173,11 @@
         
         .contact__description {
             grid-area: description;
+            margin-bottom: 1rem;
             @extend .contact_form;
 
             @include respond(md) {
-                padding: 1rem 3rem;
+                padding: 2rem 3rem;
                 
             }
 
