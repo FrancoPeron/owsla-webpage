@@ -13,7 +13,16 @@ class Header extends HTMLElement {
         <header class="header">
             <input type="checkbox" name="burger-btn" id="burger">
             <div class="header__logo-burger">
-                <a class="header__logo" href="index.html"> <img alt="OWSLA Logo"></a>
+                <svg class="header__line width="203" height="2" viewBox="0 0 203 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.73206 1L201.732 0.999983" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <a class="header__logo" href="/index.html"> <img alt="OWSLA Logo"></a>
+
+                <svg class="header__line width="203" height="2" viewBox="0 0 203 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.73206 1L201.732 0.999983" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
                 <label for="burger" class="burger-btn"><div class="burger"></div></label>
             </div>
             <nav class="nav">

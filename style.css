@@ -370,6 +370,9 @@ button {
     width: 100%;
     padding: 1rem;
     z-index: 2; }
+    .header .header__logo-burger .header__line {
+      display: none;
+      margin: 0 4rem; }
     .header .header__logo-burger .burger-btn {
       display: flex;
       flex-direction: row-reverse;
@@ -544,6 +547,8 @@ button {
       width: fit-content;
       padding: 0;
       margin-bottom: 2rem; }
+      .header .header__logo-burger .header__line {
+        display: block; }
       .header .header__logo-burger .header__logo img {
         max-height: 100px;
         content: url(./assets/image/owslaLogo.svg); }

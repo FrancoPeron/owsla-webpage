@@ -47,6 +47,11 @@
         padding: 1rem;
         z-index: 2;
 
+        .header__line{
+            display: none;
+            margin: 0 4rem;
+        }
+
         .burger-btn{
             display: flex;
             flex-direction: row-reverse;
@@ -303,6 +308,10 @@
             width: fit-content;
             padding: 0;
             margin-bottom: 2rem;
+
+            .header__line{
+                display: block;
+            }
 
             .header__logo img {
                 max-height: 100px;
